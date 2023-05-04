@@ -29,9 +29,9 @@ const navigations: Array<Navigation> = [
 <template>
   <!-- header -->
   <v-app-bar app clipped-left>
-    <v-app-bar-nav-icon @click="setNavigationDrawer()" />
+    <v-app-bar-nav-icon class="mt-1" @click="setNavigationDrawer()" />
 
-    <v-toolbar-title>Page title</v-toolbar-title>
+    <v-toolbar-title class="fontBold">S3N</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
@@ -70,3 +70,4 @@ const navigations: Array<Navigation> = [
     </v-list>
   </v-navigation-drawer>
 </template>
+<style scoped></style>

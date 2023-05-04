@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue';
+import TopPage from '@/components/TopPage.vue';
 </script>
 
 <template>
   <v-container>
     <v-row>
       <v-col>
-        <TheWelcome />
+        <TopPage />
       </v-col>
     </v-row>
   </v-container>
