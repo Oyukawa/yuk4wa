@@ -2,7 +2,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col class="ma-4">
         <video
           src="src/assets/video/IMG_8193.mp4"
           autoplay
