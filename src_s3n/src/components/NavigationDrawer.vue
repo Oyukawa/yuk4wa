@@ -22,6 +22,16 @@ const navigations: Array<Navigation> = [
     label: 'ABOUT',
     name: 'about',
     icon: mdiHome
+  },
+  {
+    label: 'PRODUCT',
+    name: 'product',
+    icon: mdiHome
+  },
+  {
+    label: 'CONTACT',
+    name: 'contact',
+    icon: mdiHome
   }
 ];
 </script>
