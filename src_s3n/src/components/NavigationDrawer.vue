@@ -28,7 +28,7 @@ const navigations: Array<Navigation> = [
 
 <template>
   <!-- header -->
-  <v-app-bar app clipped-left>
+  <v-app-bar app clipped-left :elevation="0">
     <v-app-bar-nav-icon class="mt-1" @click="setNavigationDrawer()" />
 
     <v-toolbar-title class="fontBold">S3N</v-toolbar-title>

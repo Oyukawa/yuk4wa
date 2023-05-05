@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TopImg from '@/components/TopImg.vue';
+</script>
 
 <template>
   <v-container>
     <v-row>
-      <v-col>TOP </v-col>
+      <v-col>
+        <TopImg />
+      </v-col>
     </v-row>
   </v-container>
 </template>
