@@ -5,7 +5,7 @@ import { mdiHome, mdiHeart, mdiMagnify } from '@mdi/js';
 type Navigation = { label: string; name: string; icon: string };
 
 const state = reactive({
-  navigationDrawer: true
+  navigationDrawer: false
 });
 
 const setNavigationDrawer = () => {
@@ -38,20 +38,10 @@ const navigations: Array<Navigation> = [
 
 <template>
   <!-- header -->
-  <v-app-bar app clipped-left :elevation="0">
+  <v-app-bar app clipped-left :elevation="0" false>
     <v-app-bar-nav-icon class="mt-1" @click="setNavigationDrawer()" />
 
     <v-toolbar-title class="fontBold">S3N</v-toolbar-title>
-
-    <v-spacer></v-spacer>
-
-    <v-btn icon>
-      <v-icon :icon="mdiHeart" />
-    </v-btn>
-
-    <v-btn icon>
-      <v-icon :icon="mdiMagnify" />
-    </v-btn>
 
     <v-menu left bottom>
       <v-list>

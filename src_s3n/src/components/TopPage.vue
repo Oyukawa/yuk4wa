@@ -1,42 +1,25 @@
 <script setup lang="ts">
-import { ref, watch, reactive, onMounted, onUnmounted } from 'vue';
 import TopVideo from '@/components/TopVideo.vue';
 import TopImg from '@/components/TopImg.vue';
 
-// TODO:スクロールが検知できない
-const activeLink = ref('about');
-const links = ['about', 'portfolio', 'contact'];
-const state = reactive({
-  scrollPosition: 0
-});
-
-const handleScroll = () => {
-  state.scrollPosition = window.scrollY;
-};
-
-watch(
-  () => state.scrollPosition,
-  () => {
-    switch (true) {
-      case state.scrollPosition >= 0 && state.scrollPosition < 500:
-        activeLink.value = links[0]; // about
-        break;
-      case state.scrollPosition >= 500 && state.scrollPosition < 1000:
-        activeLink.value = links[1]; // portfolio
-        break;
-      default:
-        activeLink.value = links[2]; // contact
-    }
+const links = [
+  {
+    label: 'Top',
+    name: ''
+  },
+  {
+    label: 'About',
+    name: 'about'
+  },
+  {
+    label: 'Product',
+    name: 'product'
+  },
+  {
+    label: 'Contact',
+    name: 'contact'
   }
-);
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
+];
 </script>
 
 <template>
@@ -49,20 +32,42 @@ onUnmounted(() => {
     <v-row justify="center" v-if="$vuetify.display?.smAndDown">
       <v-col cols="auto"> <TopImg /> </v-col>
     </v-row>
+
     <v-row justify="center" dense>
-      <v-col cols="auto"
-        ><router-link :to="activeLink" class="text-link fontBold">
-          I am a Frontend Developer
-        </router-link></v-col
-      >
+      <v-col cols="auto">
+        <v-menu open-on-hover>
+          <template v-slot:activator="{ props }">
+            <v-btn
+              class="text-none fontBold"
+              size="x-large"
+              elevation="0"
+              variant="plain"
+              v-bind="props"
+              ><span class="border-bottom-text"> I am a Frontend Developer </span>
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item v-for="(item, index) in links" :key="index">
+              <router-link :to="item.name" class="text-link fontBold">
+                <v-list-item-title>
+                  {{ item.label }}
+                </v-list-item-title>
+              </router-link>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </v-col>
     </v-row>
-    {{ state.scrollPosition }}:
-    {{ activeLink }}
   </v-container>
 </template>
+
 <style scoped>
 .text-link {
-  color: #000000; /* カラーを変更してリンクのように見せる */
+  color: #000000;
   text-decoration: none;
+}
+.border-bottom-text {
+  border-bottom: 4px solid #fbc02d;
 }
 </style>
