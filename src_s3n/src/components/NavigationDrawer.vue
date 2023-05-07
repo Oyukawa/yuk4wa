@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
-import { mdiHome, mdiHeart, mdiMagnify } from '@mdi/js';
+import { mdiHome, mdiAccount, mdiHammerWrench, mdiEmailOutline } from '@mdi/js';
+import router from '@/router';
 
 type Navigation = { label: string; name: string; icon: string };
 
@@ -12,6 +13,8 @@ const setNavigationDrawer = () => {
   state.navigationDrawer = !state.navigationDrawer;
 };
 
+const routerPush = (name: string) => router.push({ path: name });
+
 const navigations: Array<Navigation> = [
   {
     label: 'TOP',
@@ -21,17 +24,17 @@ const navigations: Array<Navigation> = [
   {
     label: 'ABOUT',
     name: 'about',
-    icon: mdiHome
+    icon: mdiAccount
   },
   {
     label: 'PRODUCT',
     name: 'product',
-    icon: mdiHome
+    icon: mdiHammerWrench
   },
   {
     label: 'CONTACT',
     name: 'contact',
-    icon: mdiHome
+    icon: mdiEmailOutline
   }
 ];
 </script>
@@ -39,9 +42,32 @@ const navigations: Array<Navigation> = [
 <template>
   <!-- header -->
   <v-app-bar app clipped-left :elevation="0" false>
-    <v-app-bar-nav-icon class="mt-1" @click="setNavigationDrawer()" />
+    <v-app-bar-nav-icon
+      class="mt-1"
+      @click="setNavigationDrawer()"
+      v-if="$vuetify.display?.smAndDown"
+    />
 
     <v-toolbar-title class="fontBold">S3N</v-toolbar-title>
+    <v-spacer />
+    <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiHome" @click="routerPush('/')"
+      >top</v-btn
+    >
+    <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiAccount" @click="routerPush('about')"
+      >about</v-btn
+    >
+    <v-btn
+      v-if="$vuetify.display?.mdAndUp"
+      :prepend-icon="mdiHammerWrench"
+      @click="routerPush('product')"
+      >product</v-btn
+    >
+    <v-btn
+      v-if="$vuetify.display?.mdAndUp"
+      :prepend-icon="mdiEmailOutline"
+      @click="routerPush('contact')"
+      >contact</v-btn
+    >
 
     <v-menu left bottom>
       <v-list>
