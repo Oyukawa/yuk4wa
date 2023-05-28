@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import AboutPage from '@/pages/AboutPage.vue';
+import CareerPage from '@/pages/CareerPage.vue';
 </script>
 <template>
   <v-container>
     <v-row justify="center">
-      <v-col cols="auto"> <h1>About page</h1> </v-col>
+      <v-col cols="auto"> <h1>Career page</h1> </v-col>
     </v-row>
     <v-row>
       <v-col>
-        <AboutPage />
+        <CareerPage />
       </v-col>
     </v-row>
   </v-container>

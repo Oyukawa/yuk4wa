@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import TopVideo from '@/components/TopVideo.vue';
 import TopImg from '@/components/TopImg.vue';
-const activeLink = ref('about');
+import TopAbout from '@/components/TopAbout.vue';
 </script>
 
 <template>
@@ -16,17 +15,24 @@ const activeLink = ref('about');
       <v-col cols="auto"> <TopImg /> </v-col>
     </v-row>
     <v-row justify="center" dense>
-      <v-col cols="auto"
-        ><router-link :to="activeLink" class="text-link fontBold">
-          I am a Frontend Developer
-        </router-link></v-col
-      >
+      <v-col cols="auto" class="fontBold"> I am a Frontend Developer </v-col>
+    </v-row>
+    <v-row justify="center">
+      <v-col cols="auto" class="text-grey-darken-1"> Scroll </v-col>
+    </v-row>
+    <v-row justify="center" class="mb-8">
+      <v-col cols="auto" class="vertical-progress">
+        <v-progress-linear :height="3" rounded="true" color="grey-lighten-1" indeterminate />
+      </v-col>
+    </v-row>
+    <v-row justify="center" class="mt-6">
+      <v-col cols="auto"> <TopAbout /></v-col>
     </v-row>
   </v-container>
 </template>
 <style scoped>
-.text-link {
-  color: #000000; /* カラーを変更してリンクのように見せる */
-  text-decoration: none;
+.vertical-progress {
+  transform: rotate(90deg);
+  width: 65px;
 }
 </style>

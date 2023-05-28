@@ -22,8 +22,8 @@ const navigations: Array<Navigation> = [
     icon: mdiHome
   },
   {
-    label: 'ABOUT',
-    name: 'about',
+    label: 'CAREER',
+    name: 'career',
     icon: mdiAccount
   },
   {
@@ -53,8 +53,8 @@ const navigations: Array<Navigation> = [
     <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiHome" @click="routerPush('/')"
       >top</v-btn
     >
-    <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiAccount" @click="routerPush('about')"
-      >about</v-btn
+    <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiAccount" @click="routerPush('career')"
+      >career</v-btn
     >
     <v-btn
       v-if="$vuetify.display?.mdAndUp"

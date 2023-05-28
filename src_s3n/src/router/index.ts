@@ -10,9 +10,9 @@ const router = createRouter({
       component: TopView
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/career',
+      name: 'career',
+      component: () => import('../views/CareerView.vue')
     },
     {
       path: '/product',
