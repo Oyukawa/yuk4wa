@@ -9,13 +9,15 @@ export interface Product {
   createDate: string;
 }
 
-export interface JobHistory {
-  jobId: number;
+export interface Career {
+  careerId: number;
   company: string;
   position: string;
   department: string;
-  responsibilities: Array<string>;
+  responsibilities: string;
   achievements: Array<{
+    achievementId: number;
+    title: string;
     from: string;
     to: string;
     description: string;

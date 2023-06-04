@@ -1,0 +1,56 @@
+[
+  {
+    "careerId": 1,
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "company": "会社名",
+    "position": "役職",
+    "department": "部門",
+    "responsibilities": "職務内容1",
+    "achievements": [
+      {
+        "achievementId": 1,
+        "title": "実績タイトル",
+        "from": "開始日",
+        "to": "終了日",
+        "description": "実績内容"
+      }
+    ]
+  },
+  {
+    "careerId": 2,
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "company": "会社名",
+    "position": "役職",
+    "department": "部門",
+    "responsibilities": "職務内容1",
+    "achievements": [
+      {
+        "achievementId": 2,
+        "title": "実績タイトル",
+        "from": "開始日",
+        "to": "終了日",
+        "description": "実績内容"
+      }
+    ]
+  },
+  {
+    "careerId": 3,
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "company": "会社名会社名会社名会社名会社名会社名会社名",
+    "position": "役職",
+    "department": "部門",
+    "responsibilities": "職務内容1",
+    "achievements": [
+      {
+        "achievementId": 3,
+        "title": "実績タイトル",
+        "from": "開始日",
+        "to": "終了日",
+        "description": "実績内容"
+      }
+    ]
+  }
+]
