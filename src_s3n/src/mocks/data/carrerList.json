@@ -1,0 +1,17 @@
+[
+  {
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "company": "会社名",
+    "position": "役職",
+    "department": "部門",
+    "responsibilities": ["職務内容1", "職務内容2"],
+    "achievements": [
+      {
+        "from": "開始日",
+        "to": "終了日",
+        "description": "実績内容"
+      }
+    ]
+  }
+]

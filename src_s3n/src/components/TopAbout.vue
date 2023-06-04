@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <v-card>
+  <v-card elevation="0">
     <v-container>
       <v-row justify="center">
         <v-col cols="auto">

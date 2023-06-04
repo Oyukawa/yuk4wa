@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-
+import { worker } from './mocks/browser';
 import App from './App.vue';
 import router from './router';
 import './assets/main.css';
@@ -22,6 +22,10 @@ const vuetify = createVuetify({
     }
   }
 });
+
+if (process.env.NODE_ENV === 'development') {
+  worker.start();
+}
 
 app.use(createPinia());
 app.use(router);

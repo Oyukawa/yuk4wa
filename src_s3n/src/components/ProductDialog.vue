@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import type { Product } from '@/types/global';
 import { reactive, watch } from 'vue';
+import { mdiGithub, mdiWeb } from '@mdi/js';
 
 const props = defineProps<{
   isOpening: boolean;
+  product: Product;
 }>();
 
 const emit = defineEmits(['close']);
@@ -23,17 +26,45 @@ watch(
 <template>
   <div class="text-center">
     <v-dialog v-if="props.isOpening" v-model="state.isOpening" width="auto">
-      <template v-slot:activator="{ props }">
-        <v-btn color="primary" v-bind="props"> Open Dialog </v-btn>
-      </template>
-
-      <v-card>
+      <v-card max-width="500">
+        <v-card-title>
+          {{ product.title }}
+        </v-card-title>
+        <v-img :src="product.imgSrc" height="auto" cover> </v-img>
+        <v-card-subtitle> CreateDate：{{ product.createDate }} </v-card-subtitle>
         <v-card-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
+          {{ product.description }}
+          <br />
+          <v-chip-group>
+            <v-chip v-for="item in product.technologyUsed" :key="item" x-small>{{ item }}</v-chip>
+          </v-chip-group>
         </v-card-text>
+
         <v-card-actions>
-          <v-btn color="primary" block @click="onClose(false)">Close Dialog</v-btn>
+          <v-tooltip location="bottom" text="GitHubで見る">
+            <template v-slot:activator="{ props }">
+              <v-btn
+                v-bind="props"
+                :icon="mdiGithub"
+                :href="product.gitHubSrc"
+                target="_blank"
+                rel="noopener"
+              />
+            </template>
+          </v-tooltip>
+          <v-tooltip location="bottom" :text="`${product.pageUrl}を見る`">
+            <template v-slot:activator="{ props }">
+              <v-btn
+                v-bind="props"
+                :icon="mdiWeb"
+                :href="product.pageUrl"
+                target="_blank"
+                rel="noopener"
+              />
+            </template>
+          </v-tooltip>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" @click="onClose(false)">Close</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
