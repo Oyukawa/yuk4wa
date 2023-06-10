@@ -4,7 +4,7 @@
     <v-row>
       <v-col class="ma-4">
         <video
-          src="src/assets/video/IMG_8193.mp4"
+          src="../assets/video/IMG_8193.mp4"
           autoplay
           loop
           muted
