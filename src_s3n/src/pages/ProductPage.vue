@@ -2,6 +2,7 @@
 import type { Product } from '@/types/global';
 import { onBeforeMount, reactive } from 'vue';
 import ProductDialog from '@/components/ProductDialog.vue';
+import productList from '@/mocks/data/productList.json';
 
 const state = reactive({
   isDialogOpen: false,
@@ -19,8 +20,10 @@ const closeDialog = (isOpen: boolean) => {
 };
 
 const fetchProductList = async () => {
-  const res = await fetch('/productList');
-  state.productList = await res.json();
+  // NOTE:githubPageにmsw使えないためJSONを直接代入
+  // const res = await fetch('/api/productList');
+  // state.productList = await res.json();
+  state.productList = productList;
 };
 
 onBeforeMount(() => fetchProductList());

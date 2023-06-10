@@ -11,7 +11,7 @@ const state = reactive({
 });
 
 const fetchCareerList = async () => {
-  const res = await fetch('/careerList');
+  const res = await fetch('/api/careerList');
   state.careerList = await res.json();
 };
 
