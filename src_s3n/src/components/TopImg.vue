@@ -1,9 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import image from '@/assets/images/IMG_5090.jpg';
+</script>
 <template>
   <v-container>
     <v-row>
       <v-col>
-        <v-img :width="800" aspect-ratio="16/9" cover src="src/assets/images/IMG_5090.JPG"></v-img>
+        <v-img :width="800" aspect-ratio="16/9" cover :src="image" />
       </v-col>
     </v-row>
   </v-container>

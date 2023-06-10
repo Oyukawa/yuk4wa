@@ -6,6 +6,7 @@ import { mdiGithub, mdiWeb } from '@mdi/js';
 const props = defineProps<{
   isOpening: boolean;
   product: Product;
+  productImage: string;
 }>();
 
 const emit = defineEmits(['close']);
@@ -30,7 +31,7 @@ watch(
         <v-card-title>
           {{ product.title }}
         </v-card-title>
-        <v-img :src="product.imgSrc" height="auto" cover> </v-img>
+        <v-img :src="props.productImage" height="auto" cover> </v-img>
         <v-card-subtitle> CreateDate：{{ product.createDate }} </v-card-subtitle>
         <v-card-text>
           {{ product.description }}

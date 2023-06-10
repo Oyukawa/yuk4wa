@@ -3,15 +3,20 @@ import type { Product } from '@/types/global';
 import { onBeforeMount, reactive } from 'vue';
 import ProductDialog from '@/components/ProductDialog.vue';
 import productList from '@/mocks/data/productList.json';
+import { useProductImages } from '@/stores/productImages';
+
+const productImages = useProductImages().imgUrls;
 
 const state = reactive({
   isDialogOpen: false,
   productList: new Array<Product>(),
-  selectProduct: {} as Product
+  selectedProduct: {} as Product,
+  selectedProductImage: ''
 });
 
-const onShowProductDetails = (item: Product) => {
-  state.selectProduct = item;
+const onShowProductDetails = (item: Product, index: number) => {
+  state.selectedProduct = item;
+  state.selectedProductImage = productImages[index];
   state.isDialogOpen = true;
 };
 
@@ -32,13 +37,13 @@ onBeforeMount(() => fetchProductList());
 <template>
   <v-container>
     <v-row>
-      <v-col v-for="item in state.productList" :key="item.productId" cols="12" sm="6" md="4">
+      <v-col v-for="(item, i) of state.productList" :key="item.productId" cols="12" sm="6" md="4">
         <v-sheet color="grey-lighten-3">
           <v-container>
             <v-row>
               <v-col class="ma-8">
-                <v-card elevation="0" @click="onShowProductDetails(item)">
-                  <v-img :src="item.imgSrc" height="230" aspect-ratio="16/9" cover> </v-img>
+                <v-card elevation="0" @click="onShowProductDetails(item, i)">
+                  <v-img :src="productImages[i]" height="230" aspect-ratio="16/9" cover> </v-img>
                 </v-card>
               </v-col>
             </v-row>
@@ -49,7 +54,8 @@ onBeforeMount(() => fetchProductList());
   </v-container>
   <ProductDialog
     :is-opening="state.isDialogOpen"
-    :product="state.selectProduct"
+    :product="state.selectedProduct"
+    :product-image="state.selectedProductImage"
     @close="closeDialog"
   />
 </template>
