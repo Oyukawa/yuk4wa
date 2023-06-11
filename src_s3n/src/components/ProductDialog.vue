@@ -26,12 +26,12 @@ watch(
 </script>
 <template>
   <div class="text-center">
-    <v-dialog v-if="props.isOpening" v-model="state.isOpening" width="auto">
+    <v-dialog v-if="props.isOpening" v-model="state.isOpening" width="auto" persistent>
       <v-card max-width="500">
         <v-card-title>
           {{ product.title }}
         </v-card-title>
-        <v-img :src="props.productImage" height="auto" cover> </v-img>
+        <v-img :src="props.productImage" max-height="400" cover> </v-img>
         <v-card-subtitle> CreateDate：{{ product.createDate }} </v-card-subtitle>
         <v-card-text>
           {{ product.description }}

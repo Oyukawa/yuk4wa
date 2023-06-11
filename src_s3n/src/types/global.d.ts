@@ -21,6 +21,10 @@ export interface Career {
     from: string;
     to: string;
     description: string;
+    responsibility: string;
+    teamSize: string;
+    technologiesUsed: string;
+    scopeOfWork: string;
   }>;
   startDate: string;
   endDate: string;

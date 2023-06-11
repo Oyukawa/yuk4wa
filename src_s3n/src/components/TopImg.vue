@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import image from '@/assets/images/IMG_5090.jpg';
+import image from '@/assets/images/IMG_top.jpg';
 </script>
 <template>
   <v-container>

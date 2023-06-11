@@ -1,10 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import icon from '@/assets/images/icons/IMG_icon.png';
+</script>
 <template>
   <v-card elevation="0">
     <v-container>
       <v-row justify="center">
         <v-col cols="auto">
-          <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" width="auto" aspect-ratio="1/1" />
+          <v-img :src="icon" width="auto" aspect-ratio="1/1" />
         </v-col>
         <v-col cols="6">
           <v-card-title>About</v-card-title>
