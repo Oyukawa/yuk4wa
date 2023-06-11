@@ -136,7 +136,7 @@
         "description": "",
         "responsibility": "フロントエンド開発",
         "teamSize": "7（全体60n人）",
-        "technologiesUsed": "TypeScript4.x、Vue2.7、Vuetify2、Azure DevOps、VScode、Mock Service Worker、pinia",
+        "technologiesUsed": "TypeScript4.x、Vue2.7、Vuetify2、AzureDevOps、VScode、MockServiceWorker、pinia",
         "scopeOfWork": "コーディング、コードレビュー"
       }
     ]

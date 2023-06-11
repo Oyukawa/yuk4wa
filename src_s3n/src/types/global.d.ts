@@ -3,7 +3,6 @@ export interface Product {
   title: string;
   description: string;
   pageUrl: string;
-  imgSrc: string;
   gitHubSrc: string;
   technologyUsed: Array<string>;
   createDate: string;
