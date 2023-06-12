@@ -28,3 +28,9 @@ export interface Career {
   startDate: string;
   endDate: string;
 }
+
+export interface OccupationList {
+  occupation1: string;
+  occupation2: string;
+  occupation3: string;
+}

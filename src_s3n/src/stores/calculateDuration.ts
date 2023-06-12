@@ -19,7 +19,14 @@ export const useCalculateDuration = defineStore('calculateDuration', () => {
     return { years: durationYears, months: durationMonths };
   };
 
+  const dateRange = (startDate: string, endDate: string) => {
+    const years = calculateDuration(startDate, endDate).years;
+    const months = calculateDuration(startDate, endDate).months;
+    return `${years}年${months}ヶ月`;
+  };
+
   return {
-    calculateDuration
+    calculateDuration,
+    dateRange
   };
 });

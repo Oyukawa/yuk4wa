@@ -122,7 +122,7 @@
   {
     "careerId": 4,
     "startDate": "2022/09",
-    "endDate": "現在",
+    "endDate": "2023/06",
     "company": "自社サービス•SES事業会社",
     "position": "",
     "department": "システム開発事業部",
@@ -135,7 +135,7 @@
         "to": "2022/06",
         "description": "",
         "responsibility": "フロントエンド開発",
-        "teamSize": "7（全体60n人）",
+        "teamSize": "7（全体60人）",
         "technologiesUsed": "TypeScript4.x、Vue2.7、Vuetify2、AzureDevOps、VScode、MockServiceWorker、pinia",
         "scopeOfWork": "コーディング、コードレビュー"
       }

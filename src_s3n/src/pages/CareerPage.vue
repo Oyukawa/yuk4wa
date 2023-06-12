@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import type { Career } from '@/types/global';
-import { onBeforeMount, reactive } from 'vue';
+import type { Career, OccupationList } from '@/types/global';
+import { computed, onBeforeMount, reactive } from 'vue';
 import CareerCard from '@/components/CareerCard.vue';
 import careerList from '@/mocks/data/careerList.json';
+import { useCalculateDuration } from '@/stores/calculateDuration';
 
 const state = reactive({
-  careerList: new Array<Career>()
+  careerList: new Array<Career>(),
+  occupationList: {} as OccupationList
 });
 
 const fetchCareerList = async () => {
@@ -13,11 +15,46 @@ const fetchCareerList = async () => {
   // const res = await fetch('/api/careerList');
   // state.careerList = await res.json();
   state.careerList = careerList;
+  state.occupationList = {
+    occupation1: `法人営業(${useCalculateDuration().dateRange(
+      state.careerList[1]?.startDate,
+      state.careerList[1]?.endDate
+    )})`,
+    occupation2: `販売員(${useCalculateDuration().dateRange(
+      state.careerList[2]?.startDate,
+      state.careerList[2]?.endDate
+    )})`,
+    occupation3: `ITエンジニア(${useCalculateDuration().dateRange(
+      state.careerList[3]?.startDate,
+      new Date().toISOString().slice(0, 7).replace(/-/g, '/')
+    )})`
+  };
 };
 
-onBeforeMount(() => fetchCareerList());
+onBeforeMount(() => {
+  fetchCareerList();
+});
 </script>
 <template>
-  <CareerCard :career-list="state.careerList" />
+  <v-container>
+    <v-row align="center" justify="center">
+      <v-col cols="12" md="10">
+        <v-card>
+          <v-card-item>
+            <v-card-subtitle>概要 </v-card-subtitle>
+          </v-card-item>
+          <v-card-text>
+            {{ state.occupationList.occupation1 }}→ {{ state.occupationList.occupation2 }}→
+            {{ state.occupationList.occupation3 }}
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <CareerCard :career-list="state.careerList" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <style scoped></style>

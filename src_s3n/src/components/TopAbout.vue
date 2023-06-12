@@ -8,7 +8,7 @@ import icon from '@/assets/images/icons/IMG_icon.png';
         <v-col cols="auto">
           <v-img :src="icon" width="auto" aspect-ratio="1/1" />
         </v-col>
-        <v-col cols="6">
+        <v-col cols="auto" md="6">
           <v-card-title>About</v-card-title>
           <v-card-subtitle> This page </v-card-subtitle>
           <v-card-text>
