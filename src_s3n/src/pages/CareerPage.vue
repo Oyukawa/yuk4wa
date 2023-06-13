@@ -41,7 +41,7 @@ onBeforeMount(() => {
       <v-col cols="12" md="10">
         <v-card>
           <v-card-item>
-            <v-card-subtitle>概要 </v-card-subtitle>
+            <v-card-subtitle>概要</v-card-subtitle>
           </v-card-item>
           <v-card-text>
             {{ state.occupationList.occupation1 }}→ {{ state.occupationList.occupation2 }}→
@@ -51,7 +51,7 @@ onBeforeMount(() => {
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col cols="12" md="10">
         <CareerCard :career-list="state.careerList" />
       </v-col>
     </v-row>
