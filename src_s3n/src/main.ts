@@ -5,12 +5,21 @@ import App from './App.vue';
 import router from './router';
 import './assets/main.css';
 import 'vuetify/styles';
-import { createVuetify } from 'vuetify';
+import { createVuetify, type ThemeDefinition } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 
 const app = createApp(App);
+
+const myCustomLightTheme: ThemeDefinition = {
+  dark: false,
+  colors: {
+    background: '#f5ecd6',
+    surface: '#f5ecd6'
+  }
+};
+
 const vuetify = createVuetify({
   components,
   directives,
@@ -19,6 +28,12 @@ const vuetify = createVuetify({
     aliases,
     sets: {
       mdi
+    }
+  },
+  theme: {
+    defaultTheme: 'myCustomLightTheme',
+    themes: {
+      myCustomLightTheme
     }
   }
 });

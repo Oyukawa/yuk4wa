@@ -52,7 +52,7 @@ const props = defineProps<{
       <v-col>
         <v-card>
           <v-card-item>
-            <v-card-title>{{ career.company }}</v-card-title>
+            <v-card-title hide-details>{{ career.company }}</v-card-title>
             <v-card-subtitle v-if="career.startDate || career.endDate" class="me-1">
               <p>
                 {{ career.startDate }} - {{ career.endDate }} ({{
