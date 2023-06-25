@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Career, OccupationList } from '@/types/global';
-import { computed, onBeforeMount, reactive } from 'vue';
+import { onBeforeMount, reactive } from 'vue';
 import CareerCard from '@/components/CareerCard.vue';
 import careerList from '@/mocks/data/careerList.json';
 import { useCalculateDuration } from '@/stores/calculateDuration';
