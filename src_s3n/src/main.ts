@@ -15,8 +15,8 @@ const app = createApp(App);
 const myCustomLightTheme: ThemeDefinition = {
   dark: false,
   colors: {
-    background: '#dcdddd',
-    surface: '#dcdddd'
+    background: '#fffffc',
+    surface: '#fffffc'
   }
 };
 
