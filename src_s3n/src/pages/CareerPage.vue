@@ -4,6 +4,7 @@ import { onBeforeMount, reactive } from 'vue';
 import CareerCard from '@/components/CareerCard.vue';
 import careerList from '@/mocks/data/careerList.json';
 import { useCalculateDuration } from '@/stores/calculateDuration';
+import dayjs from 'dayjs';
 
 const state = reactive({
   careerList: new Array<Career>(),
@@ -26,7 +27,7 @@ const fetchCareerList = async () => {
     )})`,
     occupation3: `ITエンジニア(${useCalculateDuration().dateRange(
       state.careerList[3]?.startDate,
-      new Date().toISOString().slice(0, 7).replace(/-/g, '/')
+      dayjs().format('YYYY/MM')
     )})`
   };
 };
@@ -44,7 +45,7 @@ onBeforeMount(() => {
             <v-card-subtitle>概要</v-card-subtitle>
           </v-card-item>
           <v-card-text>
-            {{ state.occupationList.occupation1 }}→ {{ state.occupationList.occupation2 }}→
+            {{ state.occupationList.occupation1 }} → {{ state.occupationList.occupation2 }} →
             {{ state.occupationList.occupation3 }}
           </v-card-text>
         </v-card>
