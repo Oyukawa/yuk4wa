@@ -56,10 +56,10 @@
   },
   {
     "productId": 7,
-    "title": "s3n(現：ポートフォリオサイト）",
+    "title": "yuk4wa(現：ポートフォリオサイト）",
     "description": "フロントエンド開発に従事してから作成したポートフォリオサイト。業務で学んだ技術で作成しました。",
-    "pageUrl": "https://oyukawa.github.io/s3n/",
-    "gitHubSrc": "https://github.com/Oyukawa/s3n",
+    "pageUrl": "https://oyukawa.github.io/yuk4wa/",
+    "gitHubSrc": "https://github.com/Oyukawa/yuk4wa",
     "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "MockServiceWorker"],
     "createDate": "2022/3"
   }

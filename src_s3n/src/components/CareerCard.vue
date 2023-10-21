@@ -2,14 +2,24 @@
 import icon from '@/assets/images/icons/IMG_miniIcon.png';
 import type { Career } from '@/types/global';
 import { useCalculateDuration } from '@/stores/calculateDuration';
+import { computed } from 'vue';
+import dayjs from 'dayjs';
 
 const props = defineProps<{
   careerList: Array<Career>;
 }>();
+
+const careerList = computed(() =>
+  props.careerList.map((x) => ({
+    ...x,
+    startDate: x.startDate,
+    endDate: x.endDate === '現在' ? dayjs().format('YYYY/MM') : x.endDate
+  }))
+);
 </script>
 <template>
   <v-timeline side="end" align="start" v-if="$vuetify.display?.mdAndUp">
-    <v-timeline-item size="large" v-for="career in props.careerList" :key="career.careerId">
+    <v-timeline-item size="large" v-for="career in careerList" :key="career.careerId">
       <template v-slot:icon>
         <v-avatar :image="icon" />
       </template>

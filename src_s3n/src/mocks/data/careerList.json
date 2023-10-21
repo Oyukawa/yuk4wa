@@ -122,7 +122,7 @@
   {
     "careerId": 4,
     "startDate": "2022/09",
-    "endDate": "2023/06",
+    "endDate": "現在",
     "company": "自社サービス•SES事業会社",
     "position": "",
     "department": "システム開発事業部",
@@ -132,7 +132,7 @@
         "achievementId": 1,
         "title": "コンテンツ管理システム開発",
         "from": "2022/09",
-        "to": "2022/06",
+        "to": "2023/09",
         "description": "",
         "responsibility": "フロントエンド開発",
         "teamSize": "7（全体60人）",
