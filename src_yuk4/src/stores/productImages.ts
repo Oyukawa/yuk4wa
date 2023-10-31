@@ -6,9 +6,10 @@ import product4 from '@/assets/images/products/product4.png';
 import product5 from '@/assets/images/products/product5.png';
 import product6 from '@/assets/images/products/product6.png';
 import product7 from '@/assets/images/products/product7.png';
+import product8 from '@/assets/images/products/product8.png';
 
 export const useProductImages = defineStore('productImages', () => {
-  const imgUrls = [product1, product2, product3, product4, product5, product6, product7];
+  const imgUrls = [product1, product2, product3, product4, product5, product6, product7, product8];
 
   return {
     imgUrls

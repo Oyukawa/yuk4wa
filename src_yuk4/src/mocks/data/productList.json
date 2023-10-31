@@ -62,5 +62,14 @@
     "gitHubSrc": "https://github.com/Oyukawa/yuk4",
     "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "MockServiceWorker"],
     "createDate": "2022/3"
+  },
+  {
+    "productId": 8,
+    "title": "ToolBox For Vuetify3",
+    "description": "UIのメモサイト。Vue2.7,Vuetify2を使用した開発で得た知見を基に作成しました。",
+    "pageUrl": "https://oyukawa.github.io/ToolBoxForVuetify3/",
+    "gitHubSrc": "https://github.com/Oyukawa/ToolBoxForVuetify3",
+    "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "API:NHK番組表API"],
+    "createDate": "2023/10"
   }
 ]
