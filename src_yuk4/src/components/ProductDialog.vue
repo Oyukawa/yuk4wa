@@ -42,7 +42,7 @@ watch(
         </v-card-text>
 
         <v-card-actions>
-          <v-tooltip location="bottom" text="GitHubで見る">
+          <v-tooltip v-if="product.gitHubSrc" location="bottom" text="GitHubで見る">
             <template v-slot:activator="{ props }">
               <v-btn
                 v-bind="props"
@@ -53,7 +53,7 @@ watch(
               />
             </template>
           </v-tooltip>
-          <v-tooltip location="bottom" :text="`${product.pageUrl}を見る`">
+          <v-tooltip v-if="product.pageUrl" location="bottom" :text="`${product.pageUrl}を見る`">
             <template v-slot:activator="{ props }">
               <v-btn
                 v-bind="props"

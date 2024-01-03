@@ -3,56 +3,56 @@
     "productId": 1,
     "title": "Unofficial teaser site",
     "description": "Bootstrapで作成した非公式ティザーサイト。PC版のみですがCSSで作成したアニメーションが出ます。気づけばファン歴10年。",
-    "pageUrl": "https://oyukawa.github.io/PF2_LPsinsiro/",
+    "pageUrl": "",
     "gitHubSrc": "https://github.com/Oyukawa/PF2_LPsinsiro",
     "technologyUsed": ["HTML", "CSS", "Bootstrap"],
-    "createDate": "2021/10"
+    "createDate": "2021/10 *サイト停止中"
   },
   {
     "productId": 2,
     "title": "Unofficial teaser site",
     "description": "非公式ティザーサイト。いろんなプラグインを試したため2カ月かかりました。そして気づけばプレイ歴4年。",
-    "pageUrl": "https://oyukawa.github.io/PF03_LPapexs11/",
+    "pageUrl": "",
     "gitHubSrc": "https://github.com/Oyukawa/PF03_LPapexs11",
     "technologyUsed": ["HTML", "CSS", "JavaScript"],
-    "createDate": "2021/12"
+    "createDate": "2021/12 *サイト停止中"
   },
   {
     "productId": 3,
     "title": "Todo app",
     "description": "シンプルなTodoアプリ。「今日やるべきことは何か」に集中するようにシンプル設計。絵文字で親しみを表現",
-    "pageUrl": "https://oyukawa.github.io/PF05_Todoapp/",
+    "pageUrl": "",
     "gitHubSrc": "https://github.com/Oyukawa/PF05_Todoapp",
     "technologyUsed": ["HTML", "Vue2", "Bootstrap"],
-    "createDate": "2022/01"
+    "createDate": "2022/01 *Vue2サポート終了のためサイト停止中"
   },
 
   {
     "productId": 4,
     "title": "Qサーチ",
     "description": "Qiitaの最新記事検索アプリ。調べたいワードを入力すると自動で検索されて、ワードが入った記事が表示されます。",
-    "pageUrl": "https://oyukawa.github.io/PF04_Qsearch/",
+    "pageUrl": "",
     "gitHubSrc": "https://github.com/Oyukawa/PF04_Qsearch\"",
     "technologyUsed": ["HTML", "Vue3", "Bootstrap"],
-    "createDate": "2022/01"
+    "createDate": "2022/01  *Vue2サポート終了のためサイト停止中"
   },
   {
     "productId": 5,
     "title": "ゆき小屋(旧ポートフォリオサイト)",
     "description": "現職入社前に作成したポートフォリオサイト。わかりやすいように1ページにまとめました。名前+小屋(技術置き場)でゆき(雪)小屋。",
-    "pageUrl": "https://oyukawa.github.io/HP-Yukigoya/",
+    "pageUrl": "",
     "gitHubSrc": "https://github.com/Oyukawa/HP-Yukigoya",
     "technologyUsed": ["HTML", "Vue2", "Tailwind"],
-    "createDate": "2022/03"
+    "createDate": "2022/03 *Vue2サポート終了のためサイト停止中"
   },
   {
     "productId": 6,
     "title": "Torol",
     "description": "失敗談をどんまいしあうチャット風掲示板。誰かが投稿したらボタンが変わる仕様。どんまいボタンに苦戦しました。",
-    "pageUrl": "https://torol-b74eb.web.app/",
+    "pageUrl": "",
     "gitHubSrc": "https://github.com/Oyukawa/PF06-Torol",
     "technologyUsed": ["HTML", "Vue2", "Vuetify", "Firebase"],
-    "createDate": "2022/3"
+    "createDate": "2022/3 *Vue2サポート終了のためサイト停止中"
   },
   {
     "productId": 7,
@@ -71,5 +71,14 @@
     "gitHubSrc": "https://github.com/Oyukawa/ToolBoxForVuetify3",
     "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "API:NHK番組表API"],
     "createDate": "2023/10"
+  },
+  {
+    "productId": 9,
+    "title": "FlexBox Playground",
+    "description": "勉強目的でNext.jsでFlexBoxPlaygroundを作成しました。",
+    "pageUrl": "https://flexbox-playground-omega.vercel.app",
+    "gitHubSrc": "https://github.com/Oyukawa/ToolBoxForVuetify3",
+    "technologyUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
+    "createDate": "2024/01"
   }
 ]
