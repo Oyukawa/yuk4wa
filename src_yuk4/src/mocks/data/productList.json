@@ -77,7 +77,7 @@
     "title": "FlexBox Playground",
     "description": "勉強目的でNext.jsでFlexBoxPlaygroundを作成しました。",
     "pageUrl": "https://flexbox-playground-omega.vercel.app",
-    "gitHubSrc": "https://github.com/Oyukawa/ToolBoxForVuetify3",
+    "gitHubSrc": "https://github.com/Oyukawa/flexbox-playground",
     "technologyUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
     "createDate": "2024/01"
   }
