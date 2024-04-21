@@ -48,7 +48,7 @@ const navigations: Array<Navigation> = [
       v-if="$vuetify.display?.smAndDown"
     />
 
-    <v-toolbar-title class="fontBold">yuk4</v-toolbar-title>
+    <v-toolbar-title class="fontBold">bKiyoh</v-toolbar-title>
     <v-spacer />
     <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiHome" @click="routerPush('/')"
       >top</v-btn

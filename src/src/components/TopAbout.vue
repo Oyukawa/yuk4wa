@@ -12,7 +12,7 @@ import icon from '@/assets/images/icons/IMG_icon.png';
           <v-card-title>About</v-card-title>
           <v-card-subtitle> This page </v-card-subtitle>
           <v-card-text>
-            エンジニアyuk4のポートフォリオサイトです。
+            エンジニアbKiyohのポートフォリオサイトです。
             これまでに手がけた制作物、身につけたスキルをまとめています。
           </v-card-text>
           <v-card-subtitle> Me </v-card-subtitle>
