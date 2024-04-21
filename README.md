@@ -37,4 +37,4 @@
 
 ### 実装ページ
 
-[https://bKiyoh.github.io/bKiyoh/](https://bKiyoh.github.io/bKiyoh/)
+[https://bKiyoh.github.io/Portfolio/](https://bKiyoh.github.io/Portfolio/)
