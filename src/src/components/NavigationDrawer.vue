@@ -1,7 +1,17 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
-import { mdiHome, mdiAccount, mdiHammerWrench, mdiEmailOutline } from '@mdi/js';
+import { computed, reactive } from 'vue';
+import {
+  mdiHome,
+  mdiAccount,
+  mdiHammerWrench,
+  mdiEmailOutline,
+  mdiWhiteBalanceSunny,
+  mdiWeatherNight
+} from '@mdi/js';
 import router from '@/router';
+import { useTheme } from 'vuetify';
+
+const theme = useTheme();
 
 type Navigation = { label: string; name: string; icon: string };
 
@@ -15,7 +25,15 @@ const setNavigationDrawer = () => {
 
 const routerPush = (name: string) => router.push({ path: name });
 
-const navigations: Array<Navigation> = [
+const toggleTheme = () => {
+  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
+};
+
+const themeIcon = computed(() => {
+  return theme.global.current.value.dark ? mdiWeatherNight : mdiWhiteBalanceSunny;
+});
+
+const navigation: Array<Navigation> = [
   {
     label: 'TOP',
     name: 'top',
@@ -44,12 +62,13 @@ const navigations: Array<Navigation> = [
   <v-app-bar app clipped-left :elevation="0" false>
     <v-app-bar-nav-icon
       class="mt-1"
-      @click="setNavigationDrawer()"
+      @click="setNavigationDrawer"
       v-if="$vuetify.display?.smAndDown"
     />
 
     <v-toolbar-title class="fontBold">bKiyoh</v-toolbar-title>
     <v-spacer />
+    <v-btn @click="toggleTheme"><v-icon :icon="themeIcon" size="x-large" /></v-btn>
     <v-btn v-if="$vuetify.display?.mdAndUp" :prepend-icon="mdiHome" @click="routerPush('/')"
       >top</v-btn
     >
@@ -79,10 +98,10 @@ const navigations: Array<Navigation> = [
   </v-app-bar>
 
   <!-- navigationBar -->
-  <v-navigation-drawer app clipped v-model="state.navigationDrawer">
+  <v-navigation-drawer v-model="state.navigationDrawer" v-if="$vuetify.display?.smAndDown">
     <v-list>
       <v-list-item
-        v-for="(item, i) in navigations"
+        v-for="(item, i) in navigation"
         :key="i"
         :value="item"
         :to="item"
