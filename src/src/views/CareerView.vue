@@ -4,7 +4,7 @@ import CareerPage from '@/pages/CareerPage.vue';
 <template>
   <v-container>
     <v-row justify="center">
-      <v-col cols="auto"> <h1>Career page</h1> </v-col>
+      <v-col cols="auto"> <h1>Career</h1> </v-col>
     </v-row>
     <v-row>
       <v-col>

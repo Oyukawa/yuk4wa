@@ -2,8 +2,9 @@
 <template>
   <v-container>
     <v-row justify="center">
-      <v-col cols="auto">
-        <h2>作成中</h2>
+      <v-col cols="auto" class="text-center">
+        <h3>次のTwitterアカウントのDMにてご連絡ください</h3>
+        <a href="https://twitter.com/bKiyoh">https://twitter.com/bKiyoh</a>
       </v-col>
     </v-row>
   </v-container>

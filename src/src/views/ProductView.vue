@@ -4,7 +4,7 @@ import ProductPage from '@/pages/ProductPage.vue';
 <template>
   <v-container>
     <v-row justify="center">
-      <v-col cols="auto"> <h1>Product page</h1> </v-col>
+      <v-col cols="auto"> <h1>Product</h1> </v-col>
     </v-row>
     <v-row>
       <v-col>

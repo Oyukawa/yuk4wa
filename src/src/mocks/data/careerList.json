@@ -138,6 +138,17 @@
         "teamSize": "7（全体60人）",
         "technologiesUsed": "TypeScript4.x、Vue2.7、Vuetify2、AzureDevOps、VScode、MockServiceWorker、pinia",
         "scopeOfWork": "コーディング、コードレビュー"
+      },
+      {
+        "achievementId": 2,
+        "title": "クラウド業務支援アプリ開発",
+        "from": "2023/10",
+        "to": "現在",
+        "description": "",
+        "responsibility": "フロントエンド開発",
+        "teamSize": "9",
+        "technologiesUsed": "Vue2~3.4, Vuetify3.5, Sylus0.63, Vuex4.1",
+        "scopeOfWork": "既存アプリの改修、新規機能追加、Vue3移行、コーディング、コードレビュー"
       }
     ]
   }
