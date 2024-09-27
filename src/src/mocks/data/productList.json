@@ -80,5 +80,14 @@
     "gitHubSrc": "https://github.com/bKiyoh/flexbox-playground",
     "technologyUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
     "createDate": "2024/01"
+  },
+  {
+    "productId": 10,
+    "title": "WebGLスクールポートフォリオサイト",
+    "description": "WebGLスクール第11期の課題作品ポートフォリオです。",
+    "pageUrl": "https://webgl-collection-sigma.vercel.app/vol8",
+    "gitHubSrc": "https://github.com/bKiyoh/webgl-assignment-collection",
+    "technologyUsed": ["Next.js", "shadcn/ui", "Three.js", "WebGL"],
+    "createDate": "2024/09"
   }
 ]
