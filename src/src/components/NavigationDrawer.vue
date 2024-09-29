@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue';
+import { computed, reactive, ref } from 'vue';
 import {
   mdiHome,
   mdiAccount,
@@ -19,6 +19,12 @@ const state = reactive({
   navigationDrawer: false
 });
 
+const storedTheme = localStorage.getItem('theme') || 'light';
+
+const isDarkMode = ref(localStorage.getItem('theme') === 'dark');
+
+theme.global.name.value = storedTheme;
+
 const setNavigationDrawer = () => {
   state.navigationDrawer = !state.navigationDrawer;
 };
@@ -26,11 +32,14 @@ const setNavigationDrawer = () => {
 const routerPush = (name: string) => router.push({ path: name });
 
 const toggleTheme = () => {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
+  isDarkMode.value = !isDarkMode.value;
+  const newTheme = isDarkMode.value ? 'dark' : 'light';
+  localStorage.setItem('theme', newTheme);
+  theme.global.name.value = newTheme;
 };
 
 const themeIcon = computed(() => {
-  return theme.global.current.value.dark ? mdiWeatherNight : mdiWhiteBalanceSunny;
+  return isDarkMode.value ? mdiWeatherNight : mdiWhiteBalanceSunny;
 });
 
 const navigation: Array<Navigation> = [
