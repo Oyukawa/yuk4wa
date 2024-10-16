@@ -2,7 +2,7 @@
 import type { Career, OccupationList } from '@/types/global';
 import { onBeforeMount, reactive } from 'vue';
 import CareerCard from '@/components/CareerCard.vue';
-import careerList from '@/mocks/data/careerList.json';
+import careerList from '@/assets/data/careerList.json';
 import { useCalculateDuration } from '@/stores/calculateDuration';
 import dayjs from 'dayjs';
 

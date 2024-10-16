@@ -38,9 +38,10 @@ const vuetify = createVuetify({
   }
 });
 
-if (process.env.NODE_ENV === 'development') {
-  worker.start();
-}
+// NOTE: 不要のためコメントアウト
+// if (process.env.NODE_ENV === 'development') {
+//   worker.start();
+// }
 
 app.use(createPinia());
 app.use(router);

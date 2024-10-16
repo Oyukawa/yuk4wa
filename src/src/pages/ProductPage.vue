@@ -2,7 +2,7 @@
 import type { Product } from '@/types/global';
 import { onBeforeMount, reactive } from 'vue';
 import ProductDialog from '@/components/ProductDialog.vue';
-import productList from '@/mocks/data/productList.json';
+import productList from '@/assets/data/productList.json';
 import { useProductImages } from '@/stores/productImages';
 
 const productImages = useProductImages().imgUrls;

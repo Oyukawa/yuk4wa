@@ -9,6 +9,7 @@ import product7 from '@/assets/images/products/product7.png';
 import product8 from '@/assets/images/products/product8.png';
 import product9 from '@/assets/images/products/product9.png';
 import product10 from '@/assets/images/products/product10.png';
+import product11 from '@/assets/images/products/product11.png';
 
 export const useProductImages = defineStore('productImages', () => {
   const imgUrls = [
@@ -21,7 +22,8 @@ export const useProductImages = defineStore('productImages', () => {
     product7,
     product8,
     product9,
-    product10
+    product10,
+    product11
   ];
 
   return {

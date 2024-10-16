@@ -1,0 +1,155 @@
+[
+  {
+    "careerId": 0,
+    "startDate": "",
+    "endDate": "",
+    "company": "大学",
+    "position": "法学部",
+    "department": "",
+    "responsibilities": "就職活動ではIT業界を目指していたが叶わず。IT業界を目指しているがそれに関する勉強ができておらず、自身のソフト面も然りスキル不足に原因があったと思われる。",
+    "achievements": []
+  },
+  {
+    "careerId": 1,
+    "startDate": "2016/04",
+    "endDate": "2016/07",
+    "company": "クリーニング会社",
+    "position": "",
+    "department": "ホテルリネン営業部",
+    "responsibilities": "布を取扱うアルバイトをしていたため興味があって入社。しかし業務についていけず退社。辞めたことに後悔はしていないが、もっと周りに相談すればよかったと反省している。",
+    "achievements": [
+      {
+        "achievementId": 1,
+        "title": "法人営業",
+        "from": "2016/04",
+        "to": "2016/07",
+        "description": "ホテル駐在でレンタルリネンの在庫管理、発注、日報作成、クレーム対応等",
+        "responsibility": "",
+        "teamSize": "",
+        "technologiesUsed": "",
+        "scopeOfWork": ""
+      }
+    ]
+  },
+  {
+    "careerId": 2,
+    "startDate": "2016/09",
+    "endDate": "2017/11",
+    "company": "小売店会社",
+    "position": "",
+    "department": "販売部",
+    "responsibilities": "アルバイトで働いていた職場へ契約社員として復帰。働きながらこの先の進路について考える。ある日エンジニアの友人の仕事話を聞いて、もう一度IT業界への就職に再挑戦しようと決意。学生時代の反省からプログラミング（Java）の勉強を始める。",
+    "achievements": [
+      {
+        "achievementId": 1,
+        "title": "販売員",
+        "from": "2016/09",
+        "to": "2017/11",
+        "description": "",
+        "responsibility": "紳士服、衣料雑貨、新人教育担当",
+        "teamSize": "",
+        "technologiesUsed": "",
+        "scopeOfWork": "接客販売、レジ対応、売り場管理、店舗改装（大量の発注業務から、現場作業員の管理等）"
+      }
+    ]
+  },
+  {
+    "careerId": 3,
+    "startDate": "2017/12",
+    "endDate": "2022/08",
+    "company": "SES事業会社",
+    "position": "",
+    "department": "ITソリューション部",
+    "responsibilities": "未経験ながらも勉強している姿勢を評価していただき、IT業界へ転職。開発案件から運用保守業務まで担当し、上流～下流工程を幅広く経験。",
+    "achievements": [
+      {
+        "achievementId": 1,
+        "title": "自治体向け事務システム開発",
+        "from": "2018/03",
+        "to": "2018/12",
+        "description": "",
+        "responsibility": "ヒアリング議事録作成、申請・照会系、帳票部の開発",
+        "teamSize": "15",
+        "technologiesUsed": "COBOL、Java",
+        "scopeOfWork": "基本設計、詳細設計、開発、単体テスト、結合テスト"
+      },
+      {
+        "achievementId": 2,
+        "title": "包装資材会社向け生産・販売管理システム開発",
+        "from": "2019/01",
+        "to": "2019/03",
+        "description": "",
+        "responsibility": "画面開発",
+        "teamSize": "4",
+        "technologiesUsed": "VB.NET、SQLServer",
+        "scopeOfWork": "詳細設計、開発、単体テスト"
+      },
+      {
+        "achievementId": 3,
+        "title": "免許系システムヘルプデスク",
+        "from": "2019/04",
+        "to": "2022/05",
+        "description": "",
+        "responsibility": "ヘルプデスク",
+        "teamSize": "2",
+        "technologiesUsed": "Java、SQLServer",
+        "scopeOfWork": "問合せ対応、改修対応、資産管理（端末、ルータ）、外部向け報告書作成、キッティング"
+      },
+      {
+        "achievementId": 4,
+        "title": "免許系オンラインシステム開発",
+        "from": "2021/09",
+        "to": "2021/10",
+        "description": "",
+        "responsibility": "製造、テスト",
+        "teamSize": "10",
+        "technologiesUsed": "HTML、CSS、Bootstrap、Javascript、jQuery",
+        "scopeOfWork": "開発（15画面・レスポンシブ対応）、単体テスト、結合テスト"
+      },
+      {
+        "achievementId": 5,
+        "title": "免許系システム開発",
+        "from": "2021/10",
+        "to": "2022/05",
+        "description": "",
+        "responsibility": "ヒアリング議事録作成、帳票系開発、テストデータ作成、リリース作業",
+        "teamSize": "15",
+        "technologiesUsed": "Java、SQLServer、JIVEReport、SVN、Eclipse、A5M2",
+        "scopeOfWork": "議事録作成、基本設計、詳細設計、開発、単体テスト、結合テスト、リリース"
+      }
+    ]
+  },
+  {
+    "careerId": 4,
+    "startDate": "2022/09",
+    "endDate": "現在",
+    "company": "自社サービス•SES事業会社",
+    "position": "",
+    "department": "システム開発事業部",
+    "responsibilities": "以前からフロントエンドに関心があり、業務として経験を積みたい想いで個人でフロントエンド言語を使用したアプリ開発し。その行動が実り、現職に転職。現在フロントエンド開発のPJに参画中。今後もフロントエンド開発業務を通して知見を深めいていきたいと考えている。",
+    "achievements": [
+      {
+        "achievementId": 1,
+        "title": "コンテンツ管理システム開発",
+        "from": "2022/09",
+        "to": "2023/09",
+        "description": "",
+        "responsibility": "フロントエンド開発",
+        "teamSize": "7（全体60人）",
+        "technologiesUsed": "TypeScript4.x、Vue2.7、Vuetify2、AzureDevOps、VScode、MockServiceWorker、pinia",
+        "scopeOfWork": "コーディング、コードレビュー"
+      },
+      {
+        "achievementId": 2,
+        "title": "クラウド業務支援アプリ開発",
+        "from": "2023/10",
+        "to": "現在",
+        "description": "",
+        "responsibility": "フロントエンド開発",
+        "teamSize": "9",
+        "technologiesUsed": "Vue2~3.4, Vuetify3.5, Sylus0.63, Vuex4.1",
+        "scopeOfWork": "既存アプリの改修、新規機能追加、Vue3移行、コーディング、コードレビュー"
+      }
+    ]
+  }
+]
