@@ -1,6 +1,5 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-import { worker } from './mocks/browser';
 import App from './App.vue';
 import router from './router';
 import './assets/main.css';
@@ -31,7 +30,7 @@ const vuetify = createVuetify({
     }
   },
   theme: {
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
     themes: {
       myCustomLightTheme
     }

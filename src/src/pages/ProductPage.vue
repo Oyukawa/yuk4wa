@@ -25,9 +25,6 @@ const closeDialog = (isOpen: boolean) => {
 };
 
 const fetchProductList = async () => {
-  // NOTE:githubPageにmsw使えないためJSONを直接代入
-  // const res = await fetch('/api/productList');
-  // state.productList = await res.json();
   state.productList = productList;
 };
 
@@ -37,7 +34,7 @@ onBeforeMount(() => fetchProductList());
 <template>
   <v-container>
     <v-row>
-      <v-col v-for="(item, i) of state.productList" :key="item.productId" cols="12" sm="6" md="4">
+      <v-col v-for="(item, i) of state.productList" :key="item.productId" cols="12" sm="1" md="6">
         <v-sheet color="grey-lighten-3">
           <v-container>
             <v-row>

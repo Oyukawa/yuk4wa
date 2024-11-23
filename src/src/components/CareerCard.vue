@@ -9,13 +9,14 @@ const props = defineProps<{
   careerList: Array<Career>;
 }>();
 
-const careerList = computed(() =>
-  props.careerList.map((x) => ({
+const careerList = computed(() => {
+  const formatList = props.careerList.map((x) => ({
     ...x,
     startDate: x.startDate,
     endDate: x.endDate === '現在' ? dayjs().format('YYYY/MM') : x.endDate
-  }))
-);
+  }));
+  return formatList.sort((a, b) => b.careerId - a.careerId);
+});
 </script>
 <template>
   <v-timeline side="end" align="start" v-if="$vuetify.display?.mdAndUp">
@@ -40,14 +41,14 @@ const careerList = computed(() =>
           {{ career.responsibilities }}
         </v-card-text>
 
-        <v-divider class="mx-4 mb-1" v-if="career.achievements.length > 0" />
+        <v-divider class="mx-4 mb-1" v-if="career.achievements.length > 0"></v-divider>
 
         <v-card-item v-for="achievement in career.achievements" :key="achievement.description">
           <v-card-title>{{ achievement.title }}</v-card-title>
           <v-card-text>
             <v-card-subtitle>{{ achievement.from }} - {{ achievement.to }}</v-card-subtitle>
             <p v-if="achievement.description">{{ achievement.description }}</p>
-            <p v-if="achievement.responsibility">担当 ：{{ achievement.responsibility }}</p>
+            <p v-if="achievement.responsibility">担当:{{ achievement.responsibility }}</p>
             <p v-if="achievement.technologiesUsed">使用技術：{{ achievement.technologiesUsed }}</p>
             <p v-if="achievement.scopeOfWork">作業範囲：{{ achievement.scopeOfWork }}</p>
             <p v-if="achievement.teamSize">参画人数：{{ achievement.teamSize }}人</p>
