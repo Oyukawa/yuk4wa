@@ -15,4 +15,5 @@ import TopImg from '@/components/TopImg.vue';
     </v-row>
   </v-container>
 </template>
+
 <style scoped></style>

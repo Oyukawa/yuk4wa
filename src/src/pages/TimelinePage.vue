@@ -33,6 +33,7 @@ onBeforeMount(() => {
   fetchCareerList();
 });
 </script>
+
 <template>
   <v-container>
     <v-row align="center" justify="center">
@@ -55,4 +56,5 @@ onBeforeMount(() => {
     </v-row>
   </v-container>
 </template>
+
 <style scoped></style>

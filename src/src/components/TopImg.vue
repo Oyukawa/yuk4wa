@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import image from '@/assets/images/IMG_top.jpg';
 </script>
+
 <template>
   <v-container>
     <v-row>
@@ -11,4 +12,4 @@ import image from '@/assets/images/IMG_top.jpg';
   </v-container>
 </template>
 
-<style></style>
+<style scoped></style>

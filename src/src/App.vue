@@ -7,16 +7,16 @@ provide('selectSection', selectSection);
 
 const contentWidth = ref('');
 const ratio = 0.508;
-const isMobile = ref(false); // スマホかどうかの判定
+const mobileSize = 768;
+const isMobile = ref(false);
 
 const calculateContentWidth = () => {
   const screenWidth = window.innerWidth;
 
-  // スマホサイズの基準を設定（例: 768px以下）
-  isMobile.value = screenWidth <= 768;
+  isMobile.value = screenWidth <= mobileSize;
 
   if (isMobile.value) {
-    contentWidth.value = ''; // スマホサイズの場合は幅を外す
+    contentWidth.value = '';
   } else {
     const width = Math.round(screenWidth * ratio);
     contentWidth.value = `${width}px`;

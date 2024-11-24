@@ -24,6 +24,7 @@ watch(
   () => (state.isOpening = props.isOpening)
 );
 </script>
+
 <template>
   <div class="text-center">
     <v-dialog v-if="props.isOpening" v-model="state.isOpening" width="auto" persistent>
@@ -71,4 +72,5 @@ watch(
     </v-dialog>
   </div>
 </template>
+
 <style scoped></style>

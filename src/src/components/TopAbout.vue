@@ -42,4 +42,4 @@ import { mdiGithub } from '@mdi/js';
   </v-card>
 </template>
 
-<style></style>
+<style scoped></style>

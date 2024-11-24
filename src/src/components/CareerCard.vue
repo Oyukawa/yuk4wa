@@ -18,6 +18,7 @@ const careerList = computed(() => {
   return formatList.sort((a, b) => b.careerId - a.careerId);
 });
 </script>
+
 <template>
   <v-timeline side="end" align="start" v-if="$vuetify.display?.mdAndUp">
     <v-timeline-item size="x-small" v-for="career in careerList" :key="career.careerId">
@@ -96,4 +97,5 @@ const careerList = computed(() => {
     </v-row>
   </v-container>
 </template>
+
 <style scoped></style>
