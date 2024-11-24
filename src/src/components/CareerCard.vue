@@ -20,10 +20,7 @@ const careerList = computed(() => {
 </script>
 <template>
   <v-timeline side="end" align="start" v-if="$vuetify.display?.mdAndUp">
-    <v-timeline-item size="large" v-for="career in careerList" :key="career.careerId">
-      <template v-slot:icon>
-        <v-avatar :image="icon" />
-      </template>
+    <v-timeline-item size="x-small" v-for="career in careerList" :key="career.careerId">
       <template v-slot:opposite v-if="career.startDate || career.endDate">
         <p>{{ career.startDate }} - {{ career.endDate }}</p>
         <p>

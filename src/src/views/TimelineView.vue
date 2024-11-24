@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import CareerPage from '@/pages/CareerPage.vue';
+import TimelinePage from '@/pages/TimelinePage.vue';
 </script>
 <template>
-  <CareerPage />
+  <TimelinePage />
 </template>
 <style scoped></style>

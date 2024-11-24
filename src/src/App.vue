@@ -7,11 +7,20 @@ provide('selectSection', selectSection);
 
 const contentWidth = ref('');
 const ratio = 0.508;
+const isMobile = ref(false); // スマホかどうかの判定
 
 const calculateContentWidth = () => {
   const screenWidth = window.innerWidth;
-  const width = Math.round(screenWidth * ratio);
-  contentWidth.value = `${width}px`;
+
+  // スマホサイズの基準を設定（例: 768px以下）
+  isMobile.value = screenWidth <= 768;
+
+  if (isMobile.value) {
+    contentWidth.value = ''; // スマホサイズの場合は幅を外す
+  } else {
+    const width = Math.round(screenWidth * ratio);
+    contentWidth.value = `${width}px`;
+  }
 };
 
 onMounted(() => {
@@ -26,9 +35,14 @@ onBeforeUnmount(() => {
 
 <template>
   <v-app>
-    <NavigationDrawer :content-width="contentWidth" />
+    <NavigationDrawer :content-width="isMobile ? undefined : contentWidth" />
     <v-main>
-      <div :style="{ maxWidth: contentWidth, margin: '0 auto' }">
+      <div
+        :style="{
+          maxWidth: isMobile ? 'none' : contentWidth,
+          margin: isMobile ? '0' : '0 auto'
+        }"
+      >
         <router-view />
       </div>
     </v-main>
