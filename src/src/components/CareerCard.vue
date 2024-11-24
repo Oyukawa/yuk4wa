@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import icon from '@/assets/images/icons/IMG_miniIcon.png';
+import icon from '@/assets/images/icons/IMG_icon.png';
 import type { Career } from '@/types/global';
 import { useCalculateDuration } from '@/stores/calculateDuration';
 import { computed } from 'vue';

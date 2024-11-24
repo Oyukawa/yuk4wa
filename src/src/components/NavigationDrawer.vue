@@ -84,8 +84,8 @@ const filterNavigation = computed(() => {
                 :prepend-icon="selectedRouter.icon"
                 :append-icon="mdiChevronRight"
                 flat
-                >{{ selectedRouter.label }}</v-btn
-              >
+                >{{ selectedRouter.label }}
+              </v-btn>
             </template>
             <template v-for="(n, i) in filterNavigation" :key="i">
               <v-btn
@@ -93,7 +93,7 @@ const filterNavigation = computed(() => {
                 :icon="n.icon"
                 v-tooltip:bottom="n.label"
                 @click="routerPush(n)"
-                flat
+                variant="plain"
               ></v-btn>
             </template>
           </v-speed-dial>
