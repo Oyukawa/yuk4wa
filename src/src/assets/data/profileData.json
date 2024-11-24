@@ -1,0 +1,31 @@
+{
+  "name": "ゆうき / Yuuki (@bKiyoh)",
+  "location": "平成の熊本生まれ→福岡在住",
+  "links": {
+    "x": "https://x.com/bKiyoh",
+    "github": "https://github.com/bKiyoh"
+  },
+  "sections": [
+    {
+      "title": "Work",
+      "text": [
+        "企業所属のフロントエンドエンジニアとして生きてます。",
+        "Vue.jsが得意な方で、趣味でThree.js(WebGL)を触ってます。"
+      ]
+    },
+    {
+      "title": "Outside of work",
+      "text": [
+        "ゲーマーです。🔫 とか🥊とか💡🗡️とかやってます。",
+        "音楽は🐟🤧が大好きです。絵はウィリアム・ターナーの作品が好みです。"
+      ]
+    },
+    {
+      "title": "Recently",
+      "text": [
+        "Three.js、WebGL勉強中（いつか案件取れたらいいなあ）。",
+        "写真を撮られるのが苦手なので、逆に撮る側に立とうと思ってコンデジ買いました。"
+      ]
+    }
+  ]
+}

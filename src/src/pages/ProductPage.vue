@@ -25,9 +25,6 @@ const closeDialog = (isOpen: boolean) => {
 };
 
 const fetchProductList = async () => {
-  // NOTE:githubPageにmsw使えないためJSONを直接代入
-  // const res = await fetch('/api/productList');
-  // state.productList = await res.json();
   state.productList = productList;
 };
 
@@ -37,18 +34,16 @@ onBeforeMount(() => fetchProductList());
 <template>
   <v-container>
     <v-row>
-      <v-col v-for="(item, i) of state.productList" :key="item.productId" cols="12" sm="6" md="4">
-        <v-sheet color="grey-lighten-3">
-          <v-container>
-            <v-row>
-              <v-col class="ma-8">
-                <v-card elevation="0" @click="onShowProductDetails(item, i)">
-                  <v-img :src="productImages[i]" height="230" aspect-ratio="16/9" cover> </v-img>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-sheet>
+      <v-col v-for="(item, i) of state.productList" :key="item.productId" cols="12" sm="1" md="6">
+        <v-container>
+          <v-row>
+            <v-col class="ma-6">
+              <v-card elevation="0" @click="onShowProductDetails(item, i)">
+                <v-img :src="productImages[i]" height="230" aspect-ratio="16/9" cover> </v-img>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-col>
     </v-row>
   </v-container>

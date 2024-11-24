@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ContactPage from '@/pages/ContactPage.vue';
+import TopAbout from '@/components/TopAbout.vue';
 </script>
 <template>
-  <ContactPage />
+  <TopAbout />
 </template>
 <style scoped></style>

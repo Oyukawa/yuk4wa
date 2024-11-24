@@ -8,21 +8,19 @@ import product8 from '@/assets/images/products/product8.png';
 import product9 from '@/assets/images/products/product9.png';
 import product10 from '@/assets/images/products/product10.png';
 import product11 from '@/assets/images/products/product11.png';
-
 export const useProductImages = defineStore('productImages', () => {
-  const imgUrls = [
-    product3,
-    product4,
-    product5,
-    product6,
-    product7,
-    product8,
-    product9,
-    product10,
-    product11
-  ];
-
-  return {
-    imgUrls
-  };
+    const imgUrls = [
+        product3,
+        product4,
+        product5,
+        product6,
+        product7,
+        product8,
+        product9,
+        product10,
+        product11
+    ];
+    return {
+        imgUrls
+    };
 });

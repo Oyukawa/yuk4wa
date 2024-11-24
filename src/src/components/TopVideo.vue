@@ -1,4 +1,5 @@
 <script setup lang="ts"></script>
+
 <template>
   <v-container>
     <v-row>
@@ -15,4 +16,4 @@
   </v-container>
 </template>
 
-<style></style>
+<style scoped></style>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ContactPage from '@/pages/ContactPage.vue';
+import TimelinePage from '@/pages/TimelinePage.vue';
 </script>
 <template>
-  <ContactPage />
+  <TimelinePage />
 </template>
 <style scoped></style>

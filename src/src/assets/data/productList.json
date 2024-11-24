@@ -1,23 +1,5 @@
 [
   {
-    "productId": 1,
-    "title": "Unofficial teaser site",
-    "description": "Bootstrapで作成した非公式ティザーサイト。PC版のみですがCSSで作成したアニメーションが出ます。気づけばファン歴10年。",
-    "pageUrl": "",
-    "gitHubSrc": "https://github.com/bKiyoh/PF2_LPsinsiro",
-    "technologyUsed": ["HTML", "CSS", "Bootstrap"],
-    "createDate": "2021/10 *サイト停止中"
-  },
-  {
-    "productId": 2,
-    "title": "Unofficial teaser site",
-    "description": "非公式ティザーサイト。いろんなプラグインを試したため2カ月かかりました。そして気づけばプレイ歴4年。",
-    "pageUrl": "",
-    "gitHubSrc": "https://github.com/bKiyoh/PF03_LPapexs11",
-    "technologyUsed": ["HTML", "CSS", "JavaScript"],
-    "createDate": "2021/12 *サイト停止中"
-  },
-  {
     "productId": 3,
     "title": "Todo app",
     "description": "シンプルなTodoアプリ。「今日やるべきことは何か」に集中するようにシンプル設計。絵文字で親しみを表現",

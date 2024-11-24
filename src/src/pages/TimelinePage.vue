@@ -12,9 +12,6 @@ const state = reactive({
 });
 
 const fetchCareerList = async () => {
-  // NOTE:githubPageにmsw使えないためJSONを直接代入
-  // const res = await fetch('/api/careerList');
-  // state.careerList = await res.json();
   state.careerList = careerList;
   state.occupationList = {
     occupation1: `法人営業(${useCalculateDuration().dateRange(
@@ -36,13 +33,14 @@ onBeforeMount(() => {
   fetchCareerList();
 });
 </script>
+
 <template>
   <v-container>
     <v-row align="center" justify="center">
-      <v-col cols="12" md="10">
+      <v-col>
         <v-card>
           <v-card-item>
-            <v-card-subtitle>概要</v-card-subtitle>
+            <v-card-subtitle>Career History</v-card-subtitle>
           </v-card-item>
           <v-card-text>
             {{ state.occupationList.occupation1 }} → {{ state.occupationList.occupation2 }} →
@@ -52,10 +50,11 @@ onBeforeMount(() => {
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12" md="10">
+      <v-col>
         <CareerCard :career-list="state.careerList" />
       </v-col>
     </v-row>
   </v-container>
 </template>
+
 <style scoped></style>
