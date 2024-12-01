@@ -1,16 +1,31 @@
 [
   {
     "careerId": 0,
-    "startDate": "",
-    "endDate": "",
+    "jobIcon": "🧑‍🎓",
+    "startDate": "2012/04",
+    "endDate": "2016/04",
     "company": "大学",
     "position": "法学部",
     "department": "",
     "responsibilities": "就職活動ではIT業界を目指していたが叶わず。IT業界を目指しているがそれに関する勉強ができておらず、自身のソフト面も然りスキル不足に原因があったと思われる。",
-    "achievements": []
+    "achievements": [
+      {
+        "achievementId": 1,
+        "genre": "education",
+        "title": "大学卒業",
+        "from": "2016/03",
+        "to": null,
+        "description": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": [],
+        "scopeOfWork": null
+      }
+    ]
   },
   {
     "careerId": 1,
+    "jobIcon": "👨‍💼",
     "startDate": "2016/04",
     "endDate": "2016/07",
     "company": "クリーニング会社",
@@ -20,19 +35,21 @@
     "achievements": [
       {
         "achievementId": 1,
+        "genre": "work",
         "title": "法人営業",
         "from": "2016/04",
         "to": "2016/07",
         "description": "ホテル駐在でレンタルリネンの在庫管理、発注、日報作成、クレーム対応等",
         "responsibility": "",
         "teamSize": "",
-        "technologiesUsed": "",
+        "technologiesUsed": [],
         "scopeOfWork": ""
       }
     ]
   },
   {
     "careerId": 2,
+    "jobIcon": "🪑",
     "startDate": "2016/09",
     "endDate": "2017/11",
     "company": "小売店会社",
@@ -42,19 +59,21 @@
     "achievements": [
       {
         "achievementId": 1,
+        "genre": "work",
         "title": "販売員",
         "from": "2016/09",
         "to": "2017/11",
         "description": "",
         "responsibility": "紳士服、衣料雑貨、新人教育担当",
         "teamSize": "",
-        "technologiesUsed": "",
+        "technologiesUsed": [],
         "scopeOfWork": "接客販売、レジ対応、売り場管理、店舗改装（大量の発注業務から、現場作業員の管理等）"
       }
     ]
   },
   {
     "careerId": 3,
+    "jobIcon": "🧑‍💻",
     "startDate": "2017/12",
     "endDate": "2022/08",
     "company": "SES事業会社",
@@ -65,62 +84,128 @@
       {
         "achievementId": 1,
         "title": "自治体向け事務システム開発",
+        "genre": "work",
         "from": "2018/03",
         "to": "2018/12",
         "description": "",
         "responsibility": "ヒアリング議事録作成、申請・照会系、帳票部の開発",
         "teamSize": "15",
-        "technologiesUsed": "COBOL、Java",
+        "technologiesUsed": ["COBOL", "Java"],
         "scopeOfWork": "基本設計、詳細設計、開発、単体テスト、結合テスト"
       },
       {
         "achievementId": 2,
+        "genre": "work",
         "title": "包装資材会社向け生産・販売管理システム開発",
         "from": "2019/01",
         "to": "2019/03",
         "description": "",
         "responsibility": "画面開発",
         "teamSize": "4",
-        "technologiesUsed": "VB.NET、SQLServer",
+        "technologiesUsed": ["VB.NET", "SQLServer"],
         "scopeOfWork": "詳細設計、開発、単体テスト"
       },
       {
         "achievementId": 3,
+        "genre": "work",
         "title": "免許系システムヘルプデスク",
         "from": "2019/04",
         "to": "2022/05",
         "description": "",
         "responsibility": "ヘルプデスク",
         "teamSize": "2",
-        "technologiesUsed": "Java、SQLServer",
+        "technologiesUsed": ["Java", "SQLServer"],
         "scopeOfWork": "問合せ対応、改修対応、資産管理（端末、ルータ）、外部向け報告書作成、キッティング"
       },
       {
         "achievementId": 4,
+        "genre": "work",
         "title": "免許系オンラインシステム開発",
         "from": "2021/09",
         "to": "2021/10",
         "description": "",
         "responsibility": "製造、テスト",
         "teamSize": "10",
-        "technologiesUsed": "HTML、CSS、Bootstrap、Javascript、jQuery",
+        "technologiesUsed": ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
         "scopeOfWork": "開発（15画面・レスポンシブ対応）、単体テスト、結合テスト"
       },
       {
         "achievementId": 5,
+        "genre": "work",
         "title": "免許系システム開発",
         "from": "2021/10",
         "to": "2022/05",
         "description": "",
         "responsibility": "ヒアリング議事録作成、帳票系開発、テストデータ作成、リリース作業",
         "teamSize": "15",
-        "technologiesUsed": "Java、SQLServer、JIVEReport、SVN、Eclipse、A5M2",
+        "technologiesUsed": ["Java", "SQLServer", "JIVEReport", "SVN", "Eclipse", "A5M2"],
         "scopeOfWork": "議事録作成、基本設計、詳細設計、開発、単体テスト、結合テスト、リリース"
+      },
+      {
+        "achievementId": 6,
+        "genre": "soloDev",
+        "title": "Todo app",
+        "description": "*Vue2サポート終了のためサイト停止中 シンプルなTodoアプリ。「今日やるべきことは何か」に集中するようにシンプル設計。絵文字で親しみを表現",
+        "from": "2022/01",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["HTML", "Vue2", "Bootstrap"],
+        "scopeOfWork": null,
+        "pageUrl": "",
+        "gitHubSrc": "https://github.com/bKiyoh/PF05_Todoapp",
+        "imgSrc": "/Portfolio/src/assets/images/products/product3.png"
+      },
+      {
+        "achievementId": 7,
+        "genre": "soloDev",
+        "title": "Qサーチ",
+        "description": "*Vue2サポート終了のためサイト停止中 Qiitaの最新記事検索アプリ。調べたいワードを入力すると自動で検索されて、ワードが入った記事が表示されます。",
+        "from": "2022/01",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["HTML", "Vue3", "Bootstrap"],
+        "scopeOfWork": null,
+        "pageUrl": "",
+        "gitHubSrc": "https://github.com/bKiyoh/PF04_Qsearch",
+        "imgSrc": "/Portfolio/src/assets/images/products/product4.png"
+      },
+      {
+        "achievementId": 8,
+        "genre": "soloDev",
+        "title": "ゆき小屋(旧ポートフォリオサイト)",
+        "description": "*Vue2サポート終了のためサイト停止中 現職入社前に作成したポートフォリオサイト。わかりやすいように1ページにまとめました。名前+小屋(技術置き場)でゆき(雪)小屋。",
+        "from": "2022/03",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["HTML", "Vue2", "Tailwind"],
+        "scopeOfWork": null,
+        "pageUrl": "",
+        "gitHubSrc": "https://github.com/bKiyoh/HP-Yukigoya",
+        "imgSrc": "/Portfolio/src/assets/images/products/product5.png"
+      },
+      {
+        "achievementId": 9,
+        "genre": "soloDev",
+        "title": "Torol",
+        "description": "*Vue2サポート終了のためサイト停止中 失敗談をどんまいしあうチャット風掲示板。誰かが投稿したらボタンが変わる仕様。どんまいボタンに苦戦しました。",
+        "from": "2022/03",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["HTML", "Vue2", "Vuetify", "Firebase"],
+        "scopeOfWork": null,
+        "pageUrl": "",
+        "gitHubSrc": "https://github.com/bKiyoh/PF06-Torol",
+        "imgSrc": "/Portfolio/src/assets/images/products/product6.png"
       }
     ]
   },
   {
     "careerId": 4,
+    "jobIcon": "🧑‍💻",
     "startDate": "2022/09",
     "endDate": "現在",
     "company": "自社サービス•SES事業会社",
@@ -130,25 +215,106 @@
     "achievements": [
       {
         "achievementId": 1,
+        "genre": "work",
         "title": "コンテンツ管理システム開発",
+        "description": null,
         "from": "2022/09",
         "to": "2023/09",
-        "description": "",
         "responsibility": "フロントエンド開発",
         "teamSize": "7（全体60人）",
-        "technologiesUsed": "TypeScript4.x、Vue2.7、Vuetify2、AzureDevOps、VScode、MockServiceWorker、pinia",
-        "scopeOfWork": "コーディング、コードレビュー"
+        "technologiesUsed": [
+          "TypeScript4.x",
+          "Vue2.7",
+          "Vuetify2",
+          "AzureDevOps",
+          "Visual Studio Code",
+          "Mock Service Worker",
+          "Pinia"
+        ],
+        "scopeOfWork": "コーディング、コードレビュー",
+        "pageUrl": null,
+        "gitHubSrc": null
       },
       {
         "achievementId": 2,
+        "genre": "work",
         "title": "クラウド業務支援アプリ開発",
+        "description": null,
         "from": "2023/10",
         "to": "現在",
-        "description": "",
         "responsibility": "フロントエンド開発",
         "teamSize": "9",
-        "technologiesUsed": "Vue2~3.4, Vuetify3.5, Sylus0.63, Vuex4.1",
-        "scopeOfWork": "既存アプリの改修、新規機能追加、Vue3移行、コーディング、コードレビュー"
+        "technologiesUsed": ["Vue2~3.x", "Vuetify3.x", "Stylus", "Vuex4.x"],
+        "scopeOfWork": "既存アプリの改修、新規機能追加、Vue3移行、コーディング、コードレビュー",
+        "pageUrl": null,
+        "gitHubSrc": null
+      },
+      {
+        "achievementId": 3,
+        "genre": "soloDev",
+        "title": "FlexBox Playground",
+        "description": "勉強目的でNext.jsでFlexBoxPlaygroundを作成しました。",
+        "from": "2024/01",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
+        "scopeOfWork": null,
+        "pageUrl": "https://flexbox-playground-omega.vercel.app",
+        "gitHubSrc": "https://github.com/bKiyoh/flexbox-playground",
+        "imgSrc": "/Portfolio/src/assets/images/products/product9.png"
+      },
+      {
+        "achievementId": 4,
+        "genre": "soloDev",
+        "title": "Vue.jsとThree.jsを組み合わせた環境構築CLI",
+        "description": "UnJS勉強目的で作成。言語をJSかTS選択できるようにし、初期画面は自作のVueロゴジオメトリ付きです。",
+        "from": "2024/10",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["UnJS", "Vue.js", "Three.js"],
+        "scopeOfWork": null,
+        "pageUrl": "",
+        "gitHubSrc": "https://github.com/bKiyoh/create-vue-three-app",
+        "imgSrc": "/Portfolio/src/assets/images/products/product11.png"
+      },
+      {
+        "achievementId": 5,
+        "genre": "soloDev",
+        "title": "bKiyoh(現：ポートフォリオサイト）",
+        "description": "フロントエンド開発に従事してから作成したポートフォリオサイト。業務で学んだ技術で作成しました。",
+        "from": "2022/03",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": [
+          "HTML",
+          "TypeScript",
+          "Vue3",
+          "Vuetify3",
+          "pinia",
+          "MockServiceWorker"
+        ],
+        "scopeOfWork": null,
+        "pageUrl": "https://bkiyoh.github.io/Portfolio/",
+        "gitHubSrc": "https://github.com/bKiyoh/Portfolio",
+        "imgSrc": "/Portfolio/src/assets/images/products/product7.png"
+      },
+      {
+        "achievementId": 6,
+        "genre": "soloDev",
+        "title": "ToolBox For Vuetify3",
+        "description": "UIのメモサイト。Vue2.7,Vuetify3を使用した開発で得た知見を基に作成しました。",
+        "from": "2023/10",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologiesUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "API:NHK番組表API"],
+        "scopeOfWork": null,
+        "pageUrl": "https://bKiyoh.github.io/ToolBoxForVuetify3/",
+        "gitHubSrc": "https://github.com/bKiyoh/ToolBoxForVuetify3",
+        "imgSrc": "/Portfolio/src/assets/images/products/product8.png"
       }
     ]
   }

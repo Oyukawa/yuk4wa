@@ -1,29 +1,46 @@
 <script setup lang="ts">
 import type { Career, OccupationList } from '@/types/global';
-import { onBeforeMount, reactive } from 'vue';
-import CareerCard from '@/components/CareerCard.vue';
+import { ref, onBeforeMount, reactive } from 'vue';
+import Timeline from '@/components/TimelineComponents.vue';
 import careerList from '@/assets/data/careerList.json';
 import { useCalculateDuration } from '@/stores/calculateDuration';
 import dayjs from 'dayjs';
+
+const tabValues = [
+  {
+    value: 'all',
+    label: 'All'
+  },
+  {
+    value: 'work',
+    label: 'Work'
+  },
+  {
+    value: 'soloDev',
+    label: 'SoloDev'
+  }
+];
 
 const state = reactive({
   careerList: new Array<Career>(),
   occupationList: {} as OccupationList
 });
 
+const tab = ref(null);
+
 const fetchCareerList = async () => {
   state.careerList = careerList;
   state.occupationList = {
     occupation1: `法人営業(${useCalculateDuration().dateRange(
-      state.careerList[1]?.startDate,
-      state.careerList[1]?.endDate
+      state.careerList[1].startDate ?? '',
+      state.careerList[1].endDate ?? ''
     )})`,
     occupation2: `販売員(${useCalculateDuration().dateRange(
-      state.careerList[2]?.startDate,
-      state.careerList[2]?.endDate
+      state.careerList[2]?.startDate ?? '',
+      state.careerList[2]?.endDate ?? ''
     )})`,
     occupation3: `ITエンジニア(${useCalculateDuration().dateRange(
-      state.careerList[3]?.startDate,
+      state.careerList[3]?.startDate ?? '',
       dayjs().format('YYYY/MM')
     )})`
   };
@@ -36,7 +53,7 @@ onBeforeMount(() => {
 
 <template>
   <v-container>
-    <v-row align="center" justify="center">
+    <v-row>
       <v-col>
         <v-card>
           <v-card-item>
@@ -51,10 +68,30 @@ onBeforeMount(() => {
     </v-row>
     <v-row>
       <v-col>
-        <CareerCard :career-list="state.careerList" />
+        <v-card color="transparent">
+          <v-tabs v-model="tab" align-tabs="center" grow slider-color="grey-darken-3">
+            <template v-for="(tabValue, i) of tabValues" :key="i">
+              <v-tab class="no-uppercase" :value="tabValue.value">{{ tabValue.label }}</v-tab>
+            </template>
+          </v-tabs>
+
+          <v-card-text>
+            <v-tabs-window v-model="tab">
+              <template v-for="(tabValue, i) of tabValues" :key="i">
+                <v-tabs-window-item :value="tabValue.value">
+                  <Timeline :career-list="state.careerList" :genre="tabValue.value" />
+                </v-tabs-window-item>
+              </template>
+            </v-tabs-window>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-<style scoped></style>
+<style scoped>
+.no-uppercase {
+  text-transform: none;
+}
+</style>
