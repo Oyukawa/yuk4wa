@@ -2,39 +2,43 @@
   {
     "productId": 3,
     "title": "Todo app",
-    "description": "シンプルなTodoアプリ。「今日やるべきことは何か」に集中するようにシンプル設計。絵文字で親しみを表現",
+    "description": "*Vue2サポート終了のためサイト停止中 シンプルなTodoアプリ。「今日やるべきことは何か」に集中するようにシンプル設計。絵文字で親しみを表現",
     "pageUrl": "",
     "gitHubSrc": "https://github.com/bKiyoh/PF05_Todoapp",
     "technologyUsed": ["HTML", "Vue2", "Bootstrap"],
-    "createDate": "2022/01 *Vue2サポート終了のためサイト停止中"
+    "createDate": "2022/01",
+    "imgSrc": null
   },
 
   {
     "productId": 4,
     "title": "Qサーチ",
-    "description": "Qiitaの最新記事検索アプリ。調べたいワードを入力すると自動で検索されて、ワードが入った記事が表示されます。",
+    "description": "*Vue2サポート終了のためサイト停止中 Qiitaの最新記事検索アプリ。調べたいワードを入力すると自動で検索されて、ワードが入った記事が表示されます。",
     "pageUrl": "",
     "gitHubSrc": "https://github.com/bKiyoh/PF04_Qsearch\"",
     "technologyUsed": ["HTML", "Vue3", "Bootstrap"],
-    "createDate": "2022/01  *Vue2サポート終了のためサイト停止中"
+    "createDate": "2022/01",
+    "imgSrc": null
   },
   {
     "productId": 5,
     "title": "ゆき小屋(旧ポートフォリオサイト)",
-    "description": "現職入社前に作成したポートフォリオサイト。わかりやすいように1ページにまとめました。名前+小屋(技術置き場)でゆき(雪)小屋。",
+    "description": "*Vue2サポート終了のためサイト停止中 現職入社前に作成したポートフォリオサイト。わかりやすいように1ページにまとめました。名前+小屋(技術置き場)でゆき(雪)小屋。",
     "pageUrl": "",
     "gitHubSrc": "https://github.com/bKiyoh/HP-Yukigoya",
     "technologyUsed": ["HTML", "Vue2", "Tailwind"],
-    "createDate": "2022/03 *Vue2サポート終了のためサイト停止中"
+    "createDate": "2022/03 *Vue2サポート終了のためサイト停止中",
+    "imgSrc": null
   },
   {
     "productId": 6,
     "title": "Torol",
-    "description": "失敗談をどんまいしあうチャット風掲示板。誰かが投稿したらボタンが変わる仕様。どんまいボタンに苦戦しました。",
+    "description": "*Vue2サポート終了のためサイト停止中 失敗談をどんまいしあうチャット風掲示板。誰かが投稿したらボタンが変わる仕様。どんまいボタンに苦戦しました。",
     "pageUrl": "",
     "gitHubSrc": "https://github.com/bKiyoh/PF06-Torol",
     "technologyUsed": ["HTML", "Vue2", "Vuetify", "Firebase"],
-    "createDate": "2022/3 *Vue2サポート終了のためサイト停止中"
+    "createDate": "2022/3",
+    "imgSrc": null
   },
   {
     "productId": 7,
@@ -43,16 +47,18 @@
     "pageUrl": "https://bkiyoh.github.io/Portfolio/",
     "gitHubSrc": "https://github.com/bKiyoh/Portfolio",
     "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "MockServiceWorker"],
-    "createDate": "2022/3"
+    "createDate": "2022/3",
+    "imgSrc": null
   },
   {
     "productId": 8,
     "title": "ToolBox For Vuetify3",
-    "description": "UIのメモサイト。Vue2.7,Vuetify2を使用した開発で得た知見を基に作成しました。",
+    "description": "UIのメモサイト。Vue2.7,Vuetify3を使用した開発で得た知見を基に作成しました。",
     "pageUrl": "https://bKiyoh.github.io/ToolBoxForVuetify3/",
     "gitHubSrc": "https://github.com/bKiyoh/ToolBoxForVuetify3",
     "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "API:NHK番組表API"],
-    "createDate": "2023/10"
+    "createDate": "2023/10",
+    "imgSrc": null
   },
   {
     "productId": 9,
@@ -61,7 +67,8 @@
     "pageUrl": "https://flexbox-playground-omega.vercel.app",
     "gitHubSrc": "https://github.com/bKiyoh/flexbox-playground",
     "technologyUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
-    "createDate": "2024/01"
+    "createDate": "2024/01",
+    "imgSrc": null
   },
   {
     "productId": 10,
@@ -70,15 +77,7 @@
     "pageUrl": "https://webgl-collection-sigma.vercel.app/vol8",
     "gitHubSrc": "https://github.com/bKiyoh/webgl-assignment-collection",
     "technologyUsed": ["Next.js", "shadcn/ui", "Three.js", "WebGL"],
-    "createDate": "2024/09"
-  },
-  {
-    "productId": 11,
-    "title": "Vue.jsとThree.jsを組み合わせた環境構築CLI",
-    "description": "UnJS勉強目的で作成。言語をJSかTS選択できるようにし、初期画面は自作のVueロゴジオメトリ付きです。",
-    "pageUrl": "",
-    "gitHubSrc": "https://github.com/bKiyoh/create-vue-three-app",
-    "technologyUsed": ["UnJS", "Vue.js", "Three.js"],
-    "createDate": "2024/10"
+    "createDate": "2024/09",
+    "imgSrc": null
   }
 ]
