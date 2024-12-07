@@ -4,7 +4,7 @@ import { useCalculateDuration } from '@/stores/calculateDuration';
 import ProductDialog from '@/components/ProductDialog.vue';
 import { useProductImages } from '@/stores/productImages';
 import { ref, computed } from 'vue';
-import { mdiDomain } from '@mdi/js';
+import { mdiDomain, mdiSchool, mdiFaceMan, mdiTableFurniture, mdiLaptop } from '@mdi/js';
 import dayjs from 'dayjs';
 
 const productImages = useProductImages().imgUrlsMap;
@@ -67,6 +67,18 @@ const onShowProductDetails = (item: any) => {
   };
   isDialogOpen.value = true;
 };
+
+const getIconName = (jobIcon: string) => {
+  const iconMapping: Record<string, string> = {
+    domain: mdiDomain,
+    school: mdiSchool,
+    faceMan: mdiFaceMan,
+    tableFurniture: mdiTableFurniture,
+    laptop: mdiLaptop
+  };
+
+  return iconMapping[jobIcon] || '';
+};
 </script>
 
 <template>
@@ -80,7 +92,8 @@ const onShowProductDetails = (item: any) => {
       <template v-slot:opposite v-if="career.startDate || career.endDate">
         <div style="text-align: left">
           <p v-tooltip:bottom="career.company" style="cursor: pointer">
-            <v-icon :icon="mdiDomain"></v-icon>&nbsp;{{ career.jobIcon }}
+            <v-icon :icon="mdiDomain"></v-icon>&nbsp;
+            <v-icon :icon="getIconName(career.jobIcon)"></v-icon>
           </p>
           <p v-if="career.careerId !== 0">
             {{ useCalculateDuration().dateRange(career.startDate, career.endDate) }}

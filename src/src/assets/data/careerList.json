@@ -1,7 +1,7 @@
 [
   {
     "careerId": 0,
-    "jobIcon": "🧑‍🎓",
+    "jobIcon": "school",
     "startDate": "2012/04",
     "endDate": "2016/04",
     "company": "大学",
@@ -26,7 +26,7 @@
   },
   {
     "careerId": 1,
-    "jobIcon": "👨‍💼",
+    "jobIcon": "faceMan",
     "startDate": "2016/04",
     "endDate": "2016/07",
     "company": "クリーニング会社",
@@ -51,7 +51,7 @@
   },
   {
     "careerId": 2,
-    "jobIcon": "🪑",
+    "jobIcon": "tableFurniture",
     "startDate": "2016/09",
     "endDate": "2017/11",
     "company": "小売店会社",
@@ -76,7 +76,7 @@
   },
   {
     "careerId": 3,
-    "jobIcon": "🧑‍💻",
+    "jobIcon": "laptop",
     "startDate": "2017/12",
     "endDate": "2022/08",
     "company": "SES事業会社",
@@ -213,7 +213,7 @@
   },
   {
     "careerId": 4,
-    "jobIcon": "🧑‍💻",
+    "jobIcon": "laptop",
     "startDate": "2022/09",
     "endDate": "現在",
     "company": "自社サービス•SES事業会社",
