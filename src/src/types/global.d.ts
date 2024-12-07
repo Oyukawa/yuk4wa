@@ -1,11 +1,11 @@
 export interface Product {
-  productId: number;
+  productId: string;
   title: string;
   description: string;
   pageUrl: string;
   gitHubSrc: string;
   technologyUsed: Array<string>;
-  createDate: string;
+  from: string;
   imgSrc: string | null;
 }
 
@@ -25,10 +25,10 @@ export interface Career {
     to?: string | null;
     responsibility?: string | null;
     teamSize?: string | number | null;
-    technologiesUsed: string[];
+    technologyUsed: string[];
     scopeOfWork?: string | null;
     pageUrl?: string | null;
-    imgSrc?: string | null;
+    productId?: string | null;
   }>;
   startDate: string;
   endDate: string;
