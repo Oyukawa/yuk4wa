@@ -33,7 +33,7 @@ watch(
           {{ product.title }}
         </v-card-title>
         <v-img :src="props.productImage" max-height="400" cover> </v-img>
-        <v-card-subtitle> CreateDate：{{ product.createDate }} </v-card-subtitle>
+        <v-card-subtitle> From：{{ product.from }} </v-card-subtitle>
         <v-card-text>
           {{ product.description }}
           <br />

@@ -18,8 +18,9 @@
         "description": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": [],
-        "scopeOfWork": null
+        "technologyUsed": [],
+        "scopeOfWork": null,
+        "productId": null
       }
     ]
   },
@@ -42,8 +43,9 @@
         "description": "ホテル駐在でレンタルリネンの在庫管理、発注、日報作成、クレーム対応等",
         "responsibility": "",
         "teamSize": "",
-        "technologiesUsed": [],
-        "scopeOfWork": ""
+        "technologyUsed": [],
+        "scopeOfWork": "",
+        "productId": null
       }
     ]
   },
@@ -66,8 +68,9 @@
         "description": "",
         "responsibility": "紳士服、衣料雑貨、新人教育担当",
         "teamSize": "",
-        "technologiesUsed": [],
-        "scopeOfWork": "接客販売、レジ対応、売り場管理、店舗改装（大量の発注業務から、現場作業員の管理等）"
+        "technologyUsed": [],
+        "scopeOfWork": "接客販売、レジ対応、売り場管理、店舗改装（大量の発注業務から、現場作業員の管理等）",
+        "productId": null
       }
     ]
   },
@@ -90,8 +93,9 @@
         "description": "",
         "responsibility": "ヒアリング議事録作成、申請・照会系、帳票部の開発",
         "teamSize": "15",
-        "technologiesUsed": ["COBOL", "Java"],
-        "scopeOfWork": "基本設計、詳細設計、開発、単体テスト、結合テスト"
+        "technologyUsed": ["COBOL", "Java"],
+        "scopeOfWork": "基本設計、詳細設計、開発、単体テスト、結合テスト",
+        "productId": null
       },
       {
         "achievementId": 2,
@@ -102,8 +106,9 @@
         "description": "",
         "responsibility": "画面開発",
         "teamSize": "4",
-        "technologiesUsed": ["VB.NET", "SQLServer"],
-        "scopeOfWork": "詳細設計、開発、単体テスト"
+        "technologyUsed": ["VB.NET", "SQLServer"],
+        "scopeOfWork": "詳細設計、開発、単体テスト",
+        "productId": null
       },
       {
         "achievementId": 3,
@@ -114,8 +119,9 @@
         "description": "",
         "responsibility": "ヘルプデスク",
         "teamSize": "2",
-        "technologiesUsed": ["Java", "SQLServer"],
-        "scopeOfWork": "問合せ対応、改修対応、資産管理（端末、ルータ）、外部向け報告書作成、キッティング"
+        "technologyUsed": ["Java", "SQLServer"],
+        "scopeOfWork": "問合せ対応、改修対応、資産管理（端末、ルータ）、外部向け報告書作成、キッティング",
+        "productId": null
       },
       {
         "achievementId": 4,
@@ -126,8 +132,9 @@
         "description": "",
         "responsibility": "製造、テスト",
         "teamSize": "10",
-        "technologiesUsed": ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
-        "scopeOfWork": "開発（15画面・レスポンシブ対応）、単体テスト、結合テスト"
+        "technologyUsed": ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
+        "scopeOfWork": "開発（15画面・レスポンシブ対応）、単体テスト、結合テスト",
+        "productId": null
       },
       {
         "achievementId": 5,
@@ -138,8 +145,9 @@
         "description": "",
         "responsibility": "ヒアリング議事録作成、帳票系開発、テストデータ作成、リリース作業",
         "teamSize": "15",
-        "technologiesUsed": ["Java", "SQLServer", "JIVEReport", "SVN", "Eclipse", "A5M2"],
-        "scopeOfWork": "議事録作成、基本設計、詳細設計、開発、単体テスト、結合テスト、リリース"
+        "technologyUsed": ["Java", "SQLServer", "JIVEReport", "SVN", "Eclipse", "A5M2"],
+        "scopeOfWork": "議事録作成、基本設計、詳細設計、開発、単体テスト、結合テスト、リリース",
+        "productId": null
       },
       {
         "achievementId": 6,
@@ -150,11 +158,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["HTML", "Vue2", "Bootstrap"],
+        "technologyUsed": ["HTML", "Vue2", "Bootstrap"],
         "scopeOfWork": null,
         "pageUrl": "",
         "gitHubSrc": "https://github.com/bKiyoh/PF05_Todoapp",
-        "imgSrc": "/Portfolio/src/assets/images/products/product3.png"
+        "productId": "3"
       },
       {
         "achievementId": 7,
@@ -165,11 +173,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["HTML", "Vue3", "Bootstrap"],
+        "technologyUsed": ["HTML", "Vue3", "Bootstrap"],
         "scopeOfWork": null,
         "pageUrl": "",
         "gitHubSrc": "https://github.com/bKiyoh/PF04_Qsearch",
-        "imgSrc": "/Portfolio/src/assets/images/products/product4.png"
+        "productId": "4"
       },
       {
         "achievementId": 8,
@@ -180,11 +188,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["HTML", "Vue2", "Tailwind"],
+        "technologyUsed": ["HTML", "Vue2", "Tailwind"],
         "scopeOfWork": null,
         "pageUrl": "",
         "gitHubSrc": "https://github.com/bKiyoh/HP-Yukigoya",
-        "imgSrc": "/Portfolio/src/assets/images/products/product5.png"
+        "productId": "5"
       },
       {
         "achievementId": 9,
@@ -195,11 +203,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["HTML", "Vue2", "Vuetify", "Firebase"],
+        "technologyUsed": ["HTML", "Vue2", "Vuetify", "Firebase"],
         "scopeOfWork": null,
         "pageUrl": "",
         "gitHubSrc": "https://github.com/bKiyoh/PF06-Torol",
-        "imgSrc": "/Portfolio/src/assets/images/products/product6.png"
+        "productId": "6"
       }
     ]
   },
@@ -222,7 +230,7 @@
         "to": "2023/09",
         "responsibility": "フロントエンド開発",
         "teamSize": "7（全体60人）",
-        "technologiesUsed": [
+        "technologyUsed": [
           "TypeScript4.x",
           "Vue2.7",
           "Vuetify2",
@@ -233,7 +241,8 @@
         ],
         "scopeOfWork": "コーディング、コードレビュー",
         "pageUrl": null,
-        "gitHubSrc": null
+        "gitHubSrc": null,
+        "productId": null
       },
       {
         "achievementId": 2,
@@ -244,10 +253,11 @@
         "to": "現在",
         "responsibility": "フロントエンド開発",
         "teamSize": "9",
-        "technologiesUsed": ["Vue2~3.x", "Vuetify3.x", "Stylus", "Vuex4.x"],
+        "technologyUsed": ["Vue2~3.x", "Vuetify3.x", "Stylus", "Vuex4.x"],
         "scopeOfWork": "既存アプリの改修、新規機能追加、Vue3移行、コーディング、コードレビュー",
         "pageUrl": null,
-        "gitHubSrc": null
+        "gitHubSrc": null,
+        "productId": null
       },
       {
         "achievementId": 3,
@@ -258,11 +268,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
+        "technologyUsed": ["HTML", "TypeScript", "React", "Next.js", "MUI"],
         "scopeOfWork": null,
         "pageUrl": "https://flexbox-playground-omega.vercel.app",
         "gitHubSrc": "https://github.com/bKiyoh/flexbox-playground",
-        "imgSrc": "/Portfolio/src/assets/images/products/product9.png"
+        "productId": "9"
       },
       {
         "achievementId": 4,
@@ -273,11 +283,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["UnJS", "Vue.js", "Three.js"],
+        "technologyUsed": ["UnJS", "Vue.js", "Three.js"],
         "scopeOfWork": null,
         "pageUrl": "",
         "gitHubSrc": "https://github.com/bKiyoh/create-vue-three-app",
-        "imgSrc": "/Portfolio/src/assets/images/products/product11.png"
+        "productId": "11"
       },
       {
         "achievementId": 5,
@@ -288,18 +298,11 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": [
-          "HTML",
-          "TypeScript",
-          "Vue3",
-          "Vuetify3",
-          "pinia",
-          "MockServiceWorker"
-        ],
+        "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "MockServiceWorker"],
         "scopeOfWork": null,
         "pageUrl": "https://bkiyoh.github.io/Portfolio/",
         "gitHubSrc": "https://github.com/bKiyoh/Portfolio",
-        "imgSrc": "/Portfolio/src/assets/images/products/product7.png"
+        "productId": "7"
       },
       {
         "achievementId": 6,
@@ -310,11 +313,26 @@
         "to": null,
         "responsibility": null,
         "teamSize": null,
-        "technologiesUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "API:NHK番組表API"],
+        "technologyUsed": ["HTML", "TypeScript", "Vue3", "Vuetify3", "pinia", "API:NHK番組表API"],
         "scopeOfWork": null,
         "pageUrl": "https://bKiyoh.github.io/ToolBoxForVuetify3/",
         "gitHubSrc": "https://github.com/bKiyoh/ToolBoxForVuetify3",
-        "imgSrc": "/Portfolio/src/assets/images/products/product8.png"
+        "productId": "8"
+      },
+      {
+        "achievementId": 7,
+        "genre": "soloDev",
+        "title": "WebGLスクールポートフォリオサイト",
+        "description": "WebGLスクール第11期の課題作品ポートフォリオです。",
+        "from": "2024/09",
+        "to": null,
+        "responsibility": null,
+        "teamSize": null,
+        "technologyUsed": ["Next.js", "shadcn/ui", "Three.js", "WebGL"],
+        "scopeOfWork": null,
+        "pageUrl": "https://bKiyoh.github.io/ToolBoxForVuetify3/",
+        "gitHubSrc": "https://github.com/bKiyoh/ToolBoxForVuetify3",
+        "productId": "10"
       }
     ]
   }

@@ -2,9 +2,12 @@
 import type { Career, Product } from '@/types/global';
 import { useCalculateDuration } from '@/stores/calculateDuration';
 import ProductDialog from '@/components/ProductDialog.vue';
+import { useProductImages } from '@/stores/productImages';
 import { ref, computed } from 'vue';
 import { mdiDomain } from '@mdi/js';
 import dayjs from 'dayjs';
+
+const productImages = useProductImages().imgUrlsMap;
 
 const props = defineProps<{
   careerList: Array<Career>;
@@ -13,13 +16,13 @@ const props = defineProps<{
 
 const isDialogOpen = ref(false);
 const selectedProduct = ref<Product>({
-  productId: 0,
+  productId: '0',
   title: '',
   description: '',
   pageUrl: '',
   gitHubSrc: '',
   technologyUsed: [],
-  createDate: '',
+  from: '',
   imgSrc: null
 });
 
@@ -40,8 +43,6 @@ const careerList = computed(() => {
   );
 });
 
-const achieveList = () => {};
-
 const prefixTitle = (genre: string) => {
   if (genre === 'work') return 'Work on';
   if (genre === 'soloDev') return 'Released';
@@ -52,16 +53,16 @@ const closeDialog = (isOpen: boolean) => {
   isDialogOpen.value = isOpen;
 };
 
-// TODO:型整理
+// 型整理
 const onShowProductDetails = (item: any) => {
   selectedProduct.value = {
-    productId: item.achievementId,
+    productId: item.productId,
     title: item.title,
     description: item.description,
     pageUrl: item.pageUrl,
     gitHubSrc: item.gitHubSrc,
-    technologyUsed: item.technologiesUsed,
-    createDate: item.from,
+    technologyUsed: item.technologyUsed,
+    from: item.from,
     imgSrc: item.imgSrc
   };
   isDialogOpen.value = true;
@@ -121,8 +122,8 @@ const onShowProductDetails = (item: any) => {
             >
               <p v-if="achieve.description">{{ achieve.description }}</p>
               <p class="mb-1" v-if="achieve.responsibility">担当:{{ achieve.responsibility }}</p>
-              <div class="mb-1" v-if="achieve.technologiesUsed">
-                使用技術：{{ achieve.technologiesUsed.join(', ') }}
+              <div class="mb-1" v-if="achieve.technologyUsed">
+                使用技術：{{ achieve.technologyUsed.join(', ') }}
               </div>
               <p class="mb-1" v-if="achieve.scopeOfWork">作業範囲：{{ achieve.scopeOfWork }}</p>
             </v-card-text>
@@ -165,8 +166,8 @@ const onShowProductDetails = (item: any) => {
                 >{{ achievement.from }} - {{ achievement.to }}</v-card-subtitle
               >
               <p v-if="achievement.responsibility">担当 ：{{ achievement.responsibility }}</p>
-              <p v-if="achievement.technologiesUsed">
-                使用技術：{{ achievement.technologiesUsed.join(', ') }}
+              <p v-if="achievement.technologyUsed">
+                使用技術：{{ achievement.technologyUsed.join(', ') }}
               </p>
               <p v-if="achievement.scopeOfWork">作業範囲：{{ achievement.scopeOfWork }}</p>
             </v-card-text>
@@ -178,7 +179,7 @@ const onShowProductDetails = (item: any) => {
   <ProductDialog
     :is-opening="isDialogOpen"
     :product="selectedProduct"
-    :product-image="selectedProduct.imgSrc ?? ''"
+    :product-image="productImages.get(`product${selectedProduct.productId}`) ?? ''"
     @close="closeDialog"
   />
 </template>
